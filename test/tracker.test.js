@@ -10,6 +10,7 @@ import {
   firstDateForTab,
   getCommitteeState,
   getDepartments,
+  getGeneralAgenda,
   getPanelGroups,
   getProgress,
   recordsForPanelGroup,
@@ -132,12 +133,47 @@ test("all departments are visible before their first processed lesson", () => {
   assert.equal(firstDateForTab(schedule, "1004", "Spor Hekimliği"), "2027-06-08");
 });
 
-test("general tab contains events but not academic courses", () => {
+test("general tab contains processed events but not academic courses", () => {
   const records = recordsForTab(schedule, "1002", GENERAL_TAB, "2027-01-21");
   assert.ok(records.some((record) => record.type === "exam"));
   assert.ok(records.some((record) => record.type === "holiday"));
   assert.equal(records.some((record) => record.type === "course"), false);
   assert.equal(records.some((record) => record.isPanel), false);
+});
+
+test("general agenda exposes upcoming events without revealing future lessons", () => {
+  const agenda = getGeneralAgenda(schedule, "1002", "2026-11-20");
+
+  assert.equal(agenda.upcoming.length, 18);
+  assert.equal(agenda.upcoming[0].date, "2026-12-09");
+  assert.equal(agenda.past.length, 0);
+  assert.ok(agenda.upcoming.some((record) => record.type === "exam"));
+  assert.ok(agenda.upcoming.some((record) => record.type === "ceremony"));
+  assert.equal(agenda.upcoming.some((record) => record.type === "course"), false);
+  assert.equal(agenda.upcoming.some((record) => record.committeeId !== "1002"), false);
+
+  const futureBiology = recordsForTab(
+    schedule,
+    "1002",
+    "Tıbbi Biyoloji",
+    "2026-11-20",
+  );
+  assert.equal(futureBiology.some((record) => record.date > "2026-11-20"), false);
+});
+
+test("general agenda treats today as upcoming and sorts the past newest-first", () => {
+  const onExamDay = getGeneralAgenda(schedule, "1002", "2026-12-11");
+  assert.equal(onExamDay.upcoming[0].date, "2026-12-11");
+  assert.equal(onExamDay.upcoming[0].type, "exam");
+  assert.deepEqual(
+    onExamDay.past.map((record) => record.date),
+    ["2026-12-10", "2026-12-09"],
+  );
+
+  const completed = getGeneralAgenda(schedule, "1002", "2027-01-22");
+  assert.equal(completed.upcoming.length, 0);
+  assert.equal(completed.past.length, 18);
+  assert.equal(completed.past[0].date, "2027-01-21");
 });
 
 test("panel lessons are grouped in first-appearance order", () => {

@@ -14,6 +14,7 @@ import {
   formatShortDate,
   getCommitteeState,
   getDepartments,
+  getGeneralAgenda,
   getIstanbulToday,
   getPanelGroups,
   getProgress,
@@ -68,7 +69,7 @@ function statusContent() {
     const remaining = daysBetween(today, committee.startDate);
     return {
       label: "Yakında",
-      message: `${remaining} gün sonra başlıyor. Şimdilik komitenin ders başlıklarını inceleyebilirsin.`,
+      message: `${remaining} gün sonra başlıyor. Şimdilik ders başlıklarını ve önemli tarihleri inceleyebilirsin.`,
     };
   }
 
@@ -92,7 +93,7 @@ function statusContent() {
 
   return {
     label: "Devam ediyor",
-    message: "Bugünün tarihi dahil, işlenen tüm konular aşağıda güncel olarak listeleniyor.",
+    message: "İşlenen konuları ve yaklaşan önemli tarihleri aşağıda güncel olarak takip edebilirsin.",
   };
 }
 
@@ -122,7 +123,7 @@ function tabName(tab) {
 
 function tabDescription(tab) {
   if (tab === GENERAL_TAB) {
-    return "Sınavlar, tatiller, törenler ve serbest çalışma günleri.";
+    return "Aktif komitedeki sınav, tatil, tören, serbest çalışma ve duyurular.";
   }
   if (tab === PANEL_TAB) {
     return "Akademik programda maviyle işaretlenen panel dersleri.";
@@ -135,7 +136,10 @@ function renderTabs() {
   elements.departmentTotal.textContent = `${departments.length} bölüm`;
 
   tabs.forEach((tab, index) => {
-    const count = recordsForTab(schedule, committee.id, tab, today).length;
+    const count =
+      tab === GENERAL_TAB
+        ? getGeneralAgenda(schedule, committee.id, today).upcoming.length
+        : recordsForTab(schedule, committee.id, tab, today).length;
     const button = document.createElement("button");
     button.type = "button";
     button.className = "tab-button";
@@ -151,7 +155,12 @@ function renderTabs() {
     const badge = document.createElement("span");
     badge.className = "tab-count";
     badge.textContent = String(count);
-    badge.setAttribute("aria-label", `${count} işlenmiş kayıt`);
+    badge.setAttribute(
+      "aria-label",
+      tab === GENERAL_TAB
+        ? `${count} yaklaşan kayıt`
+        : `${count} işlenmiş kayıt`,
+    );
     button.append(name, badge);
     button.addEventListener("click", () => selectTab(tab));
     button.addEventListener("keydown", handleTabKeydown);
@@ -261,10 +270,12 @@ function eventLabel(type) {
   }[type] ?? "Ders";
 }
 
-function createRecordCard(record) {
+function createRecordCard(record, { isNext = false, isPast = false } = {}) {
   const article = document.createElement("article");
   article.className = "timeline-item";
   article.dataset.type = record.isPanel ? "panel" : record.type;
+  article.classList.toggle("is-next", isNext);
+  article.classList.toggle("is-past", isPast);
 
   const marker = document.createElement("span");
   marker.className = "timeline-marker";
@@ -272,6 +283,13 @@ function createRecordCard(record) {
 
   const card = document.createElement("div");
   card.className = "lesson-card";
+
+  if (isNext) {
+    const nextLabel = document.createElement("span");
+    nextLabel.className = "next-event-label";
+    nextLabel.textContent = "Sıradaki";
+    card.append(nextLabel);
+  }
 
   const date = document.createElement("time");
   date.className = "lesson-date";
@@ -317,19 +335,127 @@ function createRecordCard(record) {
   return article;
 }
 
+function createAgendaEmptyState(hasPastRecords) {
+  const empty = document.createElement("div");
+  empty.className = "empty-state agenda-empty-state";
+
+  const icon = document.createElement("span");
+  icon.className = "empty-icon";
+  icon.textContent = "✓";
+  icon.setAttribute("aria-hidden", "true");
+
+  const title = document.createElement("h3");
+  title.textContent = "Bu komitede yaklaşan etkinlik yok";
+
+  const copy = document.createElement("p");
+  copy.textContent = hasPastRecords
+    ? "Tamamlanan etkinlikleri aşağıdaki Geçmiş bölümünden inceleyebilirsin."
+    : "Bu komite için kaynak programda genel etkinlik kaydı bulunmuyor.";
+
+  empty.append(icon, title, copy);
+  return empty;
+}
+
+function createAgendaList(records, options = {}) {
+  const list = document.createElement("div");
+  list.className = "agenda-list";
+  if (options.isPast) list.classList.add("agenda-list--past");
+
+  records.forEach((record, index) => {
+    list.append(
+      createRecordCard(record, {
+        isNext: Boolean(options.markFirstAsNext && index === 0),
+        isPast: Boolean(options.isPast),
+      }),
+    );
+  });
+
+  return list;
+}
+
+function createAgendaHistory(records) {
+  const details = document.createElement("details");
+  details.className = "agenda-history";
+
+  const summary = document.createElement("summary");
+  const heading = document.createElement("span");
+  heading.className = "agenda-history-heading";
+
+  const title = document.createElement("strong");
+  title.textContent = "Geçmiş";
+  const description = document.createElement("small");
+  description.textContent = "Geride kalan önemli tarihler";
+  heading.append(title, description);
+
+  const meta = document.createElement("span");
+  meta.className = "agenda-history-meta";
+  const count = document.createElement("span");
+  count.textContent = `${records.length} kayıt`;
+  const closedAction = document.createElement("span");
+  closedAction.className = "history-action history-action--closed";
+  closedAction.textContent = "Göster";
+  const openAction = document.createElement("span");
+  openAction.className = "history-action history-action--open";
+  openAction.textContent = "Gizle";
+  meta.append(count, closedAction, openAction);
+
+  summary.append(heading, meta);
+  details.append(summary, createAgendaList(records, { isPast: true }));
+  return details;
+}
+
+function renderGeneralTimeline() {
+  const { upcoming, past } = getGeneralAgenda(schedule, committee.id, today);
+
+  elements.resultCount.textContent = upcoming.length
+    ? `${upcoming.length} yaklaşan`
+    : "Yaklaşan kayıt yok";
+  elements.timeline.replaceChildren();
+
+  const section = document.createElement("section");
+  section.className = "agenda-section";
+  section.setAttribute("aria-labelledby", "upcoming-events-title");
+
+  const heading = document.createElement("div");
+  heading.className = "agenda-section-heading";
+  const title = document.createElement("h3");
+  title.id = "upcoming-events-title";
+  title.textContent = "Yaklaşanlar";
+  const copy = document.createElement("p");
+  copy.textContent = "Bugün ve sonrasındaki önemli tarihler";
+  heading.append(title, copy);
+
+  section.append(heading);
+  section.append(
+    upcoming.length
+      ? createAgendaList(upcoming, { markFirstAsNext: true })
+      : createAgendaEmptyState(past.length > 0),
+  );
+  elements.timeline.append(section);
+
+  if (past.length) {
+    elements.timeline.append(createAgendaHistory(past));
+  }
+}
+
 function renderTimeline() {
+  const generalView = selectedTab === GENERAL_TAB;
   const panelView = selectedTab === PANEL_TAB;
-  const records = panelView
-    ? recordsForPanelGroup(
-        schedule,
-        committee.id,
-        selectedPanelGroup,
-        today,
-      )
-    : recordsForTab(schedule, committee.id, selectedTab, today);
-  const allRecords = panelView
-    ? allRecordsForPanelGroup(schedule, committee.id, selectedPanelGroup)
-    : allRecordsForTab(schedule, committee.id, selectedTab);
+  const records = generalView
+    ? []
+    : panelView
+      ? recordsForPanelGroup(
+          schedule,
+          committee.id,
+          selectedPanelGroup,
+          today,
+        )
+      : recordsForTab(schedule, committee.id, selectedTab, today);
+  const allRecords = generalView
+    ? []
+    : panelView
+      ? allRecordsForPanelGroup(schedule, committee.id, selectedPanelGroup)
+      : allRecordsForTab(schedule, committee.id, selectedTab);
 
   renderPanelSubtabs();
 
@@ -341,6 +467,12 @@ function renderTimeline() {
     panelView && selectedPanelGroup !== PANEL_ALL
       ? `Panel dersleri içinde ${selectedPanelGroup} alanındaki konular.`
       : tabDescription(selectedTab);
+
+  if (generalView) {
+    renderGeneralTimeline();
+    return;
+  }
+
   elements.resultCount.textContent = records.length
     ? `${records.length} kayıt`
     : "Henüz kayıt yok";

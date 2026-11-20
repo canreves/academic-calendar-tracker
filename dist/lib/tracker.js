@@ -63,6 +63,21 @@ export function getDepartments(schedule, committeeId) {
   )].sort((a, b) => a.localeCompare(b, "tr"));
 }
 
+export function getGeneralAgenda(schedule, committeeId, today) {
+  const records = getCommitteeRecords(schedule, committeeId).filter(
+    (record) => record.type !== "course" && !record.isPanel,
+  );
+
+  return {
+    upcoming: records
+      .filter((record) => record.date >= today)
+      .sort((a, b) => a.date.localeCompare(b.date)),
+    past: records
+      .filter((record) => record.date < today)
+      .sort((a, b) => b.date.localeCompare(a.date)),
+  };
+}
+
 export function recordsForTab(schedule, committeeId, tab, today) {
   return getCommitteeRecords(schedule, committeeId).filter((record) => {
     if (record.date > today) return false;
