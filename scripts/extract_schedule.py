@@ -45,6 +45,14 @@ COMMITTEE_MARKERS = {
     "1.4 DERS KURULU": "1004",
 }
 
+# Medium blue marks the longitudinal research curriculum; the darker blue is
+# used for the standalone Scientific Project Panel. Light blue date headers are
+# intentionally not included.
+PANEL_COLORS = (
+    (0.357, 0.608, 0.835),
+    (0.0, 0.439, 0.753),
+)
+
 COMMITTEES = [
     {
         "id": "1002",
@@ -81,6 +89,7 @@ def clean(value: str | None) -> str:
         "Atatürk İlkeleri ve İnkılap Tarihi II",
     )
     value = value.replace("Türk Dili ve EdebiyatıI II", "Türk Dili ve Edebiyatı II")
+    value = value.replace("Nanoteknoloji Enstitüsüi", "Nanoteknoloji Enstitüsü")
     return value.strip()
 
 
@@ -110,6 +119,7 @@ def classify(topic: str, department: str) -> str:
 
 def normalize_department(value: str) -> str:
     aliases = {
+        "Biyokimya": "Tıbbi Biyokimya",
         "Ortak Dersler Bölümü": "Ortak Dersler",
         "Ders Kurulu Başkanı": "Ders Kurulu",
         "Ders Kurulu Başkanlığı": "Ders Kurulu",
@@ -124,6 +134,37 @@ def normalize_lecturer(value: str) -> str:
     return value
 
 
+def is_panel_color(fill: tuple[float, ...] | None) -> bool:
+    if not fill:
+        return False
+    return any(
+        all(abs(fill[index] - target[index]) < 0.01 for index in range(3))
+        for target in PANEL_COLORS
+    )
+
+
+def panel_rectangles(page: pymupdf.Page) -> list[pymupdf.Rect]:
+    return [
+        drawing["rect"]
+        for drawing in page.get_drawings()
+        if is_panel_color(drawing.get("fill"))
+    ]
+
+
+def cell_is_panel(
+    cell: tuple[float, float, float, float] | None,
+    rectangles: list[pymupdf.Rect],
+) -> bool:
+    if cell is None:
+        return False
+    cell_rect = pymupdf.Rect(cell)
+    return any(
+        not (intersection := cell_rect & rectangle).is_empty
+        and intersection.get_area() >= cell_rect.get_area() * 0.5
+        for rectangle in rectangles
+    )
+
+
 def extract_rows(pdf_path: Path):
     document = pymupdf.open(pdf_path)
     with pdfplumber.open(pdf_path) as pdf:
@@ -131,6 +172,7 @@ def extract_rows(pdf_path: Path):
             plumber_page = pdf.pages[page_index]
             fitz_page = document[page_index]
             words = fitz_page.get_text("words")
+            colored_panel_rectangles = panel_rectangles(fitz_page)
             tables = plumber_page.find_tables()
             if not tables:
                 continue
@@ -149,7 +191,7 @@ def extract_rows(pdf_path: Path):
                         ]
                         matches.sort(key=lambda word: (word[5], word[6], word[7]))
                         cells.append(clean(" ".join(word[4] for word in matches)))
-                yield page_index + 1, cells
+                yield page_index + 1, cells, row.cells, colored_panel_rectangles
 
 
 def extract_records(pdf_path: Path) -> list[dict[str, str]]:
@@ -157,7 +199,9 @@ def extract_records(pdf_path: Path) -> list[dict[str, str]]:
     committee_id: str | None = None
     week_dates: list[str] = []
 
-    for page_number, cells in extract_rows(pdf_path):
+    for page_number, cells, cell_boxes, colored_panel_rectangles in extract_rows(
+        pdf_path
+    ):
         row_text = " ".join(cell for cell in cells if cell)
 
         heading_cell = cells[0].upper() if cells else ""
@@ -193,6 +237,15 @@ def extract_records(pdf_path: Path) -> list[dict[str, str]]:
             department = normalize_department(clean(cells[topic_index + 1]))
             lecturer = normalize_lecturer(clean(cells[topic_index + 2]))
             topic_upper = topic.upper()
+            if (
+                department in {"Ortak Dersler", "Seçmeli Ders"}
+                or "seçmeli" in topic.casefold()
+            ):
+                continue
+
+            is_panel = cell_is_panel(
+                cell_boxes[topic_index], colored_panel_rectangles
+            )
             if topic_upper == "RAMAZAN BAYRAMI TATİLİ":
                 record_dates = week_dates
             elif topic_upper == "KURBAN BAYRAMI TATİLİ":
@@ -201,17 +254,21 @@ def extract_records(pdf_path: Path) -> list[dict[str, str]]:
                 record_dates = dates_in(topic) or [week_dates[day_index]]
 
             for record_date in record_dates:
-                records.append(
-                    {
-                        "committeeId": committee_id,
-                        "date": record_date,
-                        "topic": topic,
-                        "department": department,
-                        "lecturer": lecturer,
-                        "type": classify(topic, department),
-                        "sourcePage": str(page_number),
-                    }
-                )
+                record = {
+                    "committeeId": committee_id,
+                    "date": record_date,
+                    "topic": topic,
+                    "department": department,
+                    "lecturer": lecturer,
+                    "type": classify(topic, department),
+                    "isPanel": is_panel,
+                    "sourcePage": str(page_number),
+                }
+                if is_panel:
+                    record["panelGroup"] = (
+                        department or "Bilimsel Proje Paneli"
+                    )
+                records.append(record)
 
     records = merge_fragments(records)
     records = deduplicate(records)
@@ -255,7 +312,13 @@ def merge_fragments(records: list[dict[str, str]]) -> list[dict[str, str]]:
                 None,
             )
             if previous:
-                previous["topic"] = f'{previous["topic"]} — {record["topic"]}'
+                moderator = previous["topic"].removeprefix(
+                    "BİLİMSEL PROJE PANELİ"
+                ).strip()
+                previous["topic"] = "Bilimsel Proje Paneli"
+                previous["lecturer"] = moderator or "Moderatör belirtilmemiş"
+                previous["details"] = record["topic"]
+                previous["panelGroup"] = "Bilimsel Proje Paneli"
                 continue
         if record["topic"].upper() in fragments:
             previous = next(
@@ -316,6 +379,12 @@ def validate(records: list[dict[str, str]]) -> list[str]:
             errors.append(f'Empty topic: {record}')
         if record["committeeId"] == "1001":
             errors.append("1001 record leaked into generated data")
+        if record["department"] in {"Biyokimya", "Ortak Dersler", "Seçmeli Ders"}:
+            errors.append(f'Excluded department leaked into data: {record}')
+        if "seçmeli" in record["topic"].casefold():
+            errors.append(f'Elective record leaked into data: {record}')
+        if record["isPanel"] and not record.get("panelGroup"):
+            errors.append(f'Panel record has no group: {record}')
     return errors
 
 
