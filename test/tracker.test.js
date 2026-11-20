@@ -26,6 +26,16 @@ test("the interface uses the Cerrahpaşa identity", () => {
   assert.doesNotMatch(html, /İstanbul Tıp/);
 });
 
+test("the favicon matches the green Rod of Asclepius brand mark", () => {
+  const html = readFileSync(new URL("../dist/index.html", import.meta.url), "utf8");
+  const favicon = readFileSync(new URL("../dist/favicon.svg", import.meta.url), "utf8");
+
+  assert.match(html, /rel="icon" type="image\/svg\+xml" href="\.\/favicon\.svg"/);
+  assert.match(html, /rel="apple-touch-icon"[^>]+href="\.\/apple-touch-icon\.svg"/);
+  assert.match(favicon, /<rect[^>]+fill="#145c4b"/);
+  assert.match(favicon, /stroke="#fff"/);
+});
+
 test("the generated data contains only 1002-1004", () => {
   assert.equal(schedule.length, 366);
   assert.deepEqual(
