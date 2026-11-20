@@ -1,0 +1,114 @@
+<!doctype html>
+<html lang="tr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Dönem 1 öğrencileri için 1002–1004 komitelerinde işlenen konuları takip et."
+    />
+    <meta name="theme-color" content="#145c4b" />
+    <title>Komite Takip</title>
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <a class="skip-link" href="#content">İçeriğe geç</a>
+
+    <div class="site-shell">
+      <header class="site-header">
+        <a class="brand" href="./" aria-label="Komite Takip ana sayfa">
+          <span class="brand-mark" aria-hidden="true">
+            <span></span>
+            <span></span>
+          </span>
+          <span class="brand-copy">
+            <strong>Komite Takip</strong>
+            <small>İstanbul Tıp · Dönem 1</small>
+          </span>
+        </a>
+        <p class="academic-year">2026–2027 Akademik Yılı</p>
+      </header>
+
+      <main id="content">
+        <section class="committee-card" aria-labelledby="committee-title">
+          <div class="committee-heading">
+            <div>
+              <p class="eyebrow" id="today-label"></p>
+              <div class="committee-code-row">
+                <span class="committee-code" id="committee-code"></span>
+                <span class="status-badge" id="status-badge"></span>
+              </div>
+              <h1 id="committee-title"></h1>
+              <p class="committee-message" id="committee-message"></p>
+            </div>
+            <div class="date-monogram" aria-hidden="true">
+              <strong id="date-day"></strong>
+              <span id="date-month"></span>
+            </div>
+          </div>
+
+          <div class="progress-block">
+            <div class="progress-labels">
+              <span id="date-range"></span>
+              <strong id="progress-value"></strong>
+            </div>
+            <div
+              class="progress-track"
+              role="progressbar"
+              aria-label="Komite zaman ilerlemesi"
+              aria-valuemin="0"
+              aria-valuemax="100"
+              id="progress-track"
+            >
+              <span id="progress-fill"></span>
+            </div>
+          </div>
+        </section>
+
+        <section class="tracker-layout" aria-label="Komite dersleri">
+          <aside class="department-panel">
+            <div class="panel-heading">
+              <div>
+                <p class="section-kicker">Dersler</p>
+                <h2>Ana bilim dalları</h2>
+              </div>
+              <span class="department-total" id="department-total"></span>
+            </div>
+            <div
+              class="tab-list"
+              id="department-tabs"
+              role="tablist"
+              aria-orientation="vertical"
+              aria-label="Ana bilim dalı seç"
+            ></div>
+          </aside>
+
+          <section
+            class="timeline-panel"
+            id="timeline-panel"
+            role="tabpanel"
+            tabindex="0"
+            aria-live="polite"
+          >
+            <div class="timeline-heading">
+              <div>
+                <p class="section-kicker" id="timeline-kicker"></p>
+                <h2 id="timeline-title"></h2>
+              </div>
+              <span class="result-count" id="result-count"></span>
+            </div>
+            <p class="timeline-description" id="timeline-description"></p>
+            <div class="timeline" id="timeline"></div>
+          </section>
+        </section>
+      </main>
+
+      <footer class="site-footer">
+        <p>Kaynak: CTF 2026–2027 Preklinik Ders Programı</p>
+        <p>Yalnızca 1002, 1003 ve 1004 komiteleri</p>
+      </footer>
+    </div>
+
+    <script type="module" src="./app.js"></script>
+  </body>
+</html>
