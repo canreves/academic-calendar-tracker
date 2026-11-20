@@ -136,6 +136,7 @@ test("calendar progress is bounded and reaches 100 after the final", () => {
 test("all departments are visible before their first processed lesson", () => {
   const departments = getDepartments(schedule, "1004");
   assert.ok(departments.includes("Spor Hekimliği"));
+  assert.equal(departments.includes("Ders Kurulu"), false);
   assert.equal(
     recordsForTab(schedule, "1004", "Spor Hekimliği", "2027-04-19").length,
     0,

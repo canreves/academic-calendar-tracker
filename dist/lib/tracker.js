@@ -57,7 +57,10 @@ export function getDepartments(schedule, committeeId) {
     getCommitteeRecords(schedule, committeeId)
       .filter(
         (record) =>
-          record.type === "course" && !record.isPanel && record.department,
+          record.type === "course" &&
+          !record.isPanel &&
+          record.department &&
+          record.department !== "Ders Kurulu",
       )
       .map((record) => record.department),
   )].sort((a, b) => a.localeCompare(b, "tr"));
