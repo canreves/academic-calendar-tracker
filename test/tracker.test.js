@@ -1,18 +1,30 @@
 import test from "node:test";
 import assert from "node:assert/strict";
+import { readFileSync } from "node:fs";
 
 import { committees, schedule } from "../dist/data/schedule.js";
 import {
   GENERAL_TAB,
+  PANEL_ALL,
+  PANEL_TAB,
   firstDateForTab,
   getCommitteeState,
   getDepartments,
+  getPanelGroups,
   getProgress,
+  recordsForPanelGroup,
   recordsForTab,
   selectCommittee,
 } from "../dist/lib/tracker.js";
 
+test("the interface uses the Cerrahpaşa identity", () => {
+  const html = readFileSync(new URL("../dist/index.html", import.meta.url), "utf8");
+  assert.match(html, /Cerrahpaşa Tıp · Dönem 1/);
+  assert.doesNotMatch(html, /İstanbul Tıp/);
+});
+
 test("the generated data contains only 1002-1004", () => {
+  assert.equal(schedule.length, 366);
   assert.deepEqual(
     [...new Set(schedule.map((record) => record.committeeId))],
     ["1002", "1003", "1004"],
@@ -28,24 +40,65 @@ test("every schedule record satisfies the public data contract", () => {
     ids.add(record.id);
     assert.match(record.date, /^202[67]-\d{2}-\d{2}$/);
     assert.ok(record.topic.length > 0);
+    assert.equal(typeof record.isPanel, "boolean");
     assert.ok(["course", "exam", "holiday", "ceremony", "study", "event"].includes(record.type));
     if (record.type === "course") assert.ok(record.department.length > 0);
+    if (record.isPanel) assert.ok(record.panelGroup.length > 0);
   }
 });
 
-test("20 November 2026 selects 1002 and includes the whole current day", () => {
+test("20 November 2026 selects 1002 and excludes future lessons", () => {
   const selected = selectCommittee(committees, "2026-11-20");
   assert.equal(selected.id, "1002");
   assert.equal(getCommitteeState(selected, "2026-11-20"), "active");
 
-  const commonCourses = recordsForTab(
+  const biology = recordsForTab(
     schedule,
     "1002",
-    "Ortak Dersler",
+    "Tıbbi Biyoloji",
     "2026-11-20",
   );
-  assert.ok(commonCourses.some((record) => record.date === "2026-11-20"));
-  assert.equal(commonCourses.some((record) => record.date > "2026-11-20"), false);
+  assert.ok(biology.some((record) => record.date === "2026-11-19"));
+  assert.equal(biology.some((record) => record.date > "2026-11-20"), false);
+});
+
+test("common courses and every elective series are removed", () => {
+  assert.equal(
+    schedule.some((record) =>
+      ["Ortak Dersler", "Seçmeli Ders"].includes(record.department),
+    ),
+    false,
+  );
+  assert.equal(
+    schedule.some((record) => record.topic.toLocaleLowerCase("tr").includes("seçmeli")),
+    false,
+  );
+  assert.equal(
+    schedule.some((record) =>
+      ["Güzel Sanatlar I", "İletişim Becerileri", "Yapay Zekâ"].includes(record.topic),
+    ),
+    false,
+  );
+});
+
+test("biochemistry is normalized to a single department", () => {
+  assert.equal(schedule.some((record) => record.department === "Biyokimya"), false);
+  assert.ok(schedule.some((record) => record.department === "Tıbbi Biyokimya"));
+
+  const panelBiochemistry = recordsForPanelGroup(
+    schedule,
+    "1002",
+    "Tıbbi Biyokimya",
+    "2027-01-01",
+  );
+  assert.equal(panelBiochemistry.length, 1);
+  assert.match(panelBiochemistry[0].topic, /Ölçüm Güvenilirliği/);
+  assert.equal(
+    recordsForTab(schedule, "1002", "Tıbbi Biyokimya", "2027-01-21").some(
+      (record) => /Ölçüm Güvenilirliği/.test(record.topic),
+    ),
+    false,
+  );
 });
 
 test("committee selection keeps the last committee during breaks", () => {
@@ -82,6 +135,42 @@ test("general tab contains events but not academic courses", () => {
   assert.ok(records.some((record) => record.type === "exam"));
   assert.ok(records.some((record) => record.type === "holiday"));
   assert.equal(records.some((record) => record.type === "course"), false);
+  assert.equal(records.some((record) => record.isPanel), false);
+});
+
+test("panel lessons are grouped in first-appearance order", () => {
+  assert.equal(recordsForTab(schedule, "1002", PANEL_TAB, "2027-01-21").length, 18);
+  assert.equal(recordsForTab(schedule, "1003", PANEL_TAB, "2027-04-16").length, 13);
+  assert.equal(recordsForTab(schedule, "1004", PANEL_TAB, "2027-06-14").length, 0);
+  assert.deepEqual(getPanelGroups(schedule, "1004"), []);
+  assert.deepEqual(getPanelGroups(schedule, "1002"), [
+    "Göğüs Cerrahisi",
+    "Tıp Eğitimi",
+    "Tıbbi Biyoloji",
+    "Halk Sağlığı",
+    "Histoloji ve Embriyoloji",
+    "Pediatri",
+    "Biyoistatistik ve Tıp Bilişimi",
+    "Tıp Tarihi ve Etik",
+    "Tıbbi Biyokimya",
+  ]);
+  assert.equal(
+    recordsForPanelGroup(schedule, "1002", PANEL_ALL, "2027-01-21").length,
+    18,
+  );
+});
+
+test("the standalone scientific project panel has its own group", () => {
+  const records = recordsForPanelGroup(
+    schedule,
+    "1003",
+    "Bilimsel Proje Paneli",
+    "2027-04-16",
+  );
+  assert.equal(records.length, 1);
+  assert.equal(records[0].topic, "Bilimsel Proje Paneli");
+  assert.match(records[0].lecturer, /Moderatör/);
+  assert.match(records[0].details, /Konuşmacılar/);
 });
 
 test("multi-day holidays are expanded to their scheduled dates", () => {
