@@ -1,8 +1,12 @@
 import { committees, schedule } from "./data/schedule.js";
 import {
   GENERAL_TAB,
+  PANEL_ALL,
+  PANEL_TAB,
+  allRecordsForPanelGroup,
   allRecordsForTab,
   daysBetween,
+  firstDateForPanelGroup,
   firstDateForTab,
   formatDay,
   formatLongDate,
@@ -11,8 +15,10 @@ import {
   getCommitteeState,
   getDepartments,
   getIstanbulToday,
+  getPanelGroups,
   getProgress,
   isISODate,
+  recordsForPanelGroup,
   recordsForTab,
   selectCommittee,
 } from "./lib/tracker.js";
@@ -23,7 +29,12 @@ const today = isISODate(requestedDate) ? requestedDate : getIstanbulToday();
 const committee = selectCommittee(committees, today);
 const committeeState = getCommitteeState(committee, today);
 const departments = getDepartments(schedule, committee.id);
-const tabs = [GENERAL_TAB, ...departments];
+const panelGroups = getPanelGroups(schedule, committee.id);
+const tabs = [
+  GENERAL_TAB,
+  ...(panelGroups.length ? [PANEL_TAB] : []),
+  ...departments,
+];
 
 const elements = {
   todayLabel: document.querySelector("#today-label"),
@@ -44,10 +55,13 @@ const elements = {
   timelineTitle: document.querySelector("#timeline-title"),
   timelineDescription: document.querySelector("#timeline-description"),
   resultCount: document.querySelector("#result-count"),
+  panelSubtabsShell: document.querySelector("#panel-subtabs-shell"),
+  panelSubtabs: document.querySelector("#panel-subtabs"),
   timeline: document.querySelector("#timeline"),
 };
 
 let selectedTab = GENERAL_TAB;
+let selectedPanelGroup = PANEL_ALL;
 
 function statusContent() {
   if (committeeState === "upcoming") {
@@ -101,12 +115,17 @@ function renderHeader() {
 }
 
 function tabName(tab) {
-  return tab === GENERAL_TAB ? "Genel" : tab;
+  if (tab === GENERAL_TAB) return "Genel";
+  if (tab === PANEL_TAB) return "Panel Dersler";
+  return tab;
 }
 
 function tabDescription(tab) {
   if (tab === GENERAL_TAB) {
     return "Sınavlar, tatiller, törenler ve serbest çalışma günleri.";
+  }
+  if (tab === PANEL_TAB) {
+    return "Akademik programda maviyle işaretlenen panel dersleri.";
   }
   return `${tab} kapsamında bugüne kadar işlenen konular.`;
 }
@@ -154,12 +173,81 @@ function handleTabKeydown(event) {
 }
 
 function selectTab(tab) {
+  if (tab === PANEL_TAB && selectedTab !== PANEL_TAB) {
+    selectedPanelGroup = PANEL_ALL;
+  }
   selectedTab = tab;
   for (const button of elements.departmentTabs.querySelectorAll("[role='tab']")) {
     const selected = button.dataset.tab === tab;
     button.setAttribute("aria-selected", String(selected));
     button.tabIndex = selected ? 0 : -1;
   }
+  renderTimeline();
+}
+
+function panelGroupName(group) {
+  return group === PANEL_ALL ? "Tümü" : group;
+}
+
+function renderPanelSubtabs() {
+  const visible = selectedTab === PANEL_TAB;
+  elements.panelSubtabsShell.hidden = !visible;
+  elements.panelSubtabs.replaceChildren();
+  if (!visible) return;
+
+  const groups = [PANEL_ALL, ...panelGroups];
+  groups.forEach((group, index) => {
+    const count = recordsForPanelGroup(
+      schedule,
+      committee.id,
+      group,
+      today,
+    ).length;
+    const button = document.createElement("button");
+    button.type = "button";
+    button.className = "panel-subtab";
+    button.id = `panel-tab-${index}`;
+    button.dataset.panelGroup = group;
+    button.setAttribute("role", "tab");
+    button.setAttribute("aria-controls", "timeline-panel");
+    button.setAttribute("aria-selected", String(group === selectedPanelGroup));
+    button.tabIndex = group === selectedPanelGroup ? 0 : -1;
+
+    const name = document.createElement("span");
+    name.textContent = panelGroupName(group);
+    const badge = document.createElement("span");
+    badge.className = "panel-subtab-count";
+    badge.textContent = String(count);
+    badge.setAttribute("aria-label", `${count} işlenmiş panel kaydı`);
+    button.append(name, badge);
+    button.addEventListener("click", () => selectPanelGroup(group));
+    button.addEventListener("keydown", handlePanelTabKeydown);
+    elements.panelSubtabs.append(button);
+  });
+}
+
+function handlePanelTabKeydown(event) {
+  const groups = [PANEL_ALL, ...panelGroups];
+  const current = groups.indexOf(event.currentTarget.dataset.panelGroup);
+  let next = current;
+  if (event.key === "ArrowRight" || event.key === "ArrowDown") {
+    next = (current + 1) % groups.length;
+  }
+  if (event.key === "ArrowLeft" || event.key === "ArrowUp") {
+    next = (current - 1 + groups.length) % groups.length;
+  }
+  if (event.key === "Home") next = 0;
+  if (event.key === "End") next = groups.length - 1;
+  if (next === current) return;
+  event.preventDefault();
+  selectPanelGroup(groups[next]);
+  elements.panelSubtabs
+    .querySelector(`[data-panel-group="${CSS.escape(groups[next])}"]`)
+    ?.focus();
+}
+
+function selectPanelGroup(group) {
+  selectedPanelGroup = group;
   renderTimeline();
 }
 
@@ -176,7 +264,7 @@ function eventLabel(type) {
 function createRecordCard(record) {
   const article = document.createElement("article");
   article.className = "timeline-item";
-  article.dataset.type = record.type;
+  article.dataset.type = record.isPanel ? "panel" : record.type;
 
   const marker = document.createElement("span");
   marker.className = "timeline-marker";
@@ -190,7 +278,12 @@ function createRecordCard(record) {
   date.dateTime = record.date;
   date.textContent = formatLongDate(record.date);
 
-  if (record.type !== "course") {
+  if (record.isPanel) {
+    const source = document.createElement("span");
+    source.className = "panel-source";
+    source.textContent = record.department || record.panelGroup;
+    card.append(source);
+  } else if (record.type !== "course") {
     const kind = document.createElement("span");
     kind.className = "event-kind";
     kind.textContent = eventLabel(record.type);
@@ -201,31 +294,56 @@ function createRecordCard(record) {
   title.textContent = record.topic;
   card.append(date, title);
 
-  if (record.type === "course") {
+  if (record.type === "course" || record.isPanel) {
     const lecturer = document.createElement("p");
     lecturer.className = "lecturer";
-    lecturer.innerHTML = `<span aria-hidden="true">ÖÜ</span><strong>${escapeHTML(record.lecturer || "Belirtilmemiş")}</strong>`;
+    const icon = document.createElement("span");
+    icon.setAttribute("aria-hidden", "true");
+    icon.textContent = record.isPanel ? "P" : "ÖÜ";
+    const name = document.createElement("strong");
+    name.textContent = record.lecturer || "Belirtilmemiş";
+    lecturer.append(icon, name);
     card.append(lecturer);
+  }
+
+  if (record.details) {
+    const details = document.createElement("p");
+    details.className = "panel-details";
+    details.textContent = record.details;
+    card.append(details);
   }
 
   article.append(marker, card);
   return article;
 }
 
-function escapeHTML(value) {
-  const node = document.createElement("span");
-  node.textContent = value;
-  return node.innerHTML;
-}
-
 function renderTimeline() {
-  const records = recordsForTab(schedule, committee.id, selectedTab, today);
-  const allRecords = allRecordsForTab(schedule, committee.id, selectedTab);
+  const panelView = selectedTab === PANEL_TAB;
+  const records = panelView
+    ? recordsForPanelGroup(
+        schedule,
+        committee.id,
+        selectedPanelGroup,
+        today,
+      )
+    : recordsForTab(schedule, committee.id, selectedTab, today);
+  const allRecords = panelView
+    ? allRecordsForPanelGroup(schedule, committee.id, selectedPanelGroup)
+    : allRecordsForTab(schedule, committee.id, selectedTab);
 
-  elements.timelineKicker.textContent = `${committee.id} · ${tabName(selectedTab)}`;
+  renderPanelSubtabs();
+
+  elements.timelineKicker.textContent = panelView
+    ? `${committee.id} · ${panelGroupName(selectedPanelGroup)}`
+    : `${committee.id} · ${tabName(selectedTab)}`;
   elements.timelineTitle.textContent = tabName(selectedTab);
-  elements.timelineDescription.textContent = tabDescription(selectedTab);
-  elements.resultCount.textContent = records.length ? `${records.length} kayıt` : "Henüz kayıt yok";
+  elements.timelineDescription.textContent =
+    panelView && selectedPanelGroup !== PANEL_ALL
+      ? `Panel dersleri içinde ${selectedPanelGroup} alanındaki konular.`
+      : tabDescription(selectedTab);
+  elements.resultCount.textContent = records.length
+    ? `${records.length} kayıt`
+    : "Henüz kayıt yok";
   elements.timeline.replaceChildren();
 
   if (!records.length) {
@@ -238,7 +356,9 @@ function renderTimeline() {
     const title = document.createElement("h3");
     title.textContent = "Henüz işlenmedi";
     const copy = document.createElement("p");
-    const firstDate = firstDateForTab(schedule, committee.id, selectedTab);
+    const firstDate = panelView
+      ? firstDateForPanelGroup(schedule, committee.id, selectedPanelGroup)
+      : firstDateForTab(schedule, committee.id, selectedTab);
     copy.textContent = firstDate
       ? `İlk kayıt ${formatLongDate(firstDate)} tarihinde.`
       : "Bu komite için kaynak programda kayıt bulunmuyor.";
