@@ -33,6 +33,7 @@ export const schedule = [
     "department": "Ders Kurulu",
     "lecturer": "",
     "type": "course",
+    "isPanel": false,
     "id": "1002-2026-11-09-001"
   },
   {
@@ -42,6 +43,7 @@ export const schedule = [
     "department": "Tıbbi Biyokimya",
     "lecturer": "Karolin Yanar",
     "type": "course",
+    "isPanel": false,
     "id": "1002-2026-11-09-002"
   },
   {
@@ -51,6 +53,7 @@ export const schedule = [
     "department": "Biyofizik",
     "lecturer": "Ebru Hacıosmanoğlu Aldoğan",
     "type": "course",
+    "isPanel": false,
     "id": "1002-2026-11-09-003"
   },
   {
@@ -60,6 +63,7 @@ export const schedule = [
     "department": "Tıbbi Biyokimya",
     "lecturer": "Hakan Ekmekçi",
     "type": "course",
+    "isPanel": false,
     "id": "1002-2026-11-09-004"
   },
   {
@@ -69,6 +73,7 @@ export const schedule = [
     "department": "Tıbbi Biyoloji",
     "lecturer": "İlhan Onaran",
     "type": "course",
+    "isPanel": false,
     "id": "1002-2026-11-10-005"
   },
   {
@@ -78,6 +83,7 @@ export const schedule = [
     "department": "Biyofizik",
     "lecturer": "Handan Tuncel",
     "type": "course",
+    "isPanel": false,
     "id": "1002-2026-11-10-006"
   },
   {
@@ -87,16 +93,8 @@ export const schedule = [
     "department": "Biyofizik",
     "lecturer": "Handan Tuncel",
     "type": "course",
+    "isPanel": false,
     "id": "1002-2026-11-10-007"
-  },
-  {
-    "committeeId": "1002",
-    "date": "2026-11-10",
-    "topic": "Güzel Sanatlar I",
-    "department": "Ortak Dersler",
-    "lecturer": "",
-    "type": "course",
-    "id": "1002-2026-11-10-008"
   },
   {
     "committeeId": "1002",
@@ -105,7 +103,8 @@ export const schedule = [
     "department": "Biyofizik",
     "lecturer": "Handan Tuncel",
     "type": "course",
-    "id": "1002-2026-11-11-009"
+    "isPanel": false,
+    "id": "1002-2026-11-11-008"
   },
   {
     "committeeId": "1002",
@@ -114,7 +113,8 @@ export const schedule = [
     "department": "Biyofizik",
     "lecturer": "Handan Tuncel",
     "type": "course",
-    "id": "1002-2026-11-11-010"
+    "isPanel": false,
+    "id": "1002-2026-11-11-009"
   },
   {
     "committeeId": "1002",
@@ -123,7 +123,8 @@ export const schedule = [
     "department": "Tıbbi Biyokimya",
     "lecturer": "Özlem Balcı Ekmekçi",
     "type": "course",
-    "id": "1002-2026-11-11-011"
+    "isPanel": false,
+    "id": "1002-2026-11-11-010"
   },
   {
     "committeeId": "1002",
@@ -132,16 +133,8 @@ export const schedule = [
     "department": "Tıbbi Biyokimya",
     "lecturer": "Özlem Balcı Ekmekçi",
     "type": "course",
-    "id": "1002-2026-11-11-012"
-  },
-  {
-    "committeeId": "1002",
-    "date": "2026-11-11",
-    "topic": "Cerrahi Robotik Sistemler ve Tıpta Uygulamaları (Seçmeli)",
-    "department": "Üroloji",
-    "lecturer": "Bülent Önal",
-    "type": "course",
-    "id": "1002-2026-11-11-013"
+    "isPanel": false,
+    "id": "1002-2026-11-11-011"
   },
   {
     "committeeId": "1002",
@@ -150,7 +143,8 @@ export const schedule = [
     "department": "Biyofizik",
     "lecturer": "Handan Tuncel",
     "type": "course",
-    "id": "1002-2026-11-12-014"
+    "isPanel": false,
+    "id": "1002-2026-11-12-012"
   },
   {
     "committeeId": "1002",
@@ -159,7 +153,8 @@ export const schedule = [
     "department": "Biyofizik",
     "lecturer": "Handan Tuncel",
     "type": "course",
-    "id": "1002-2026-11-12-015"
+    "isPanel": false,
+    "id": "1002-2026-11-12-013"
   },
   {
     "committeeId": "1002",
@@ -168,7 +163,8 @@ export const schedule = [
     "department": "Tıbbi Biyoloji",
     "lecturer": "İlhan Onaran",
     "type": "course",
-    "id": "1002-2026-11-12-016"
+    "isPanel": false,
+    "id": "1002-2026-11-12-014"
   },
   {
     "committeeId": "1002",
@@ -177,34 +173,8 @@ export const schedule = [
     "department": "Tıbbi Biyoloji",
     "lecturer": "Fatma Kaya Dağıstanlı",
     "type": "course",
-    "id": "1002-2026-11-12-017"
-  },
-  {
-    "committeeId": "1002",
-    "date": "2026-11-13",
-    "topic": "Atatürk İlkeleri ve İnkılap Tarihi I",
-    "department": "Ortak Dersler",
-    "lecturer": "",
-    "type": "course",
-    "id": "1002-2026-11-13-018"
-  },
-  {
-    "committeeId": "1002",
-    "date": "2026-11-13",
-    "topic": "Türk Dili ve Edebiyatı I",
-    "department": "Ortak Dersler",
-    "lecturer": "",
-    "type": "course",
-    "id": "1002-2026-11-13-019"
-  },
-  {
-    "committeeId": "1002",
-    "date": "2026-11-13",
-    "topic": "Yabancı Dil I",
-    "department": "Ortak Dersler",
-    "lecturer": "",
-    "type": "course",
-    "id": "1002-2026-11-13-020"
+    "isPanel": false,
+    "id": "1002-2026-11-12-015"
   },
   {
     "committeeId": "1002",
@@ -213,7 +183,8 @@ export const schedule = [
     "department": "Tıbbi Biyoloji",
     "lecturer": "Matem Tunçdemir",
     "type": "course",
-    "id": "1002-2026-11-16-021"
+    "isPanel": false,
+    "id": "1002-2026-11-16-016"
   },
   {
     "committeeId": "1002",
@@ -222,7 +193,8 @@ export const schedule = [
     "department": "Tıbbi Biyoloji",
     "lecturer": "Matem Tunçdemir",
     "type": "course",
-    "id": "1002-2026-11-16-022"
+    "isPanel": false,
+    "id": "1002-2026-11-16-017"
   },
   {
     "committeeId": "1002",
@@ -231,7 +203,8 @@ export const schedule = [
     "department": "Biyofizik",
     "lecturer": "Handan Tuncel",
     "type": "course",
-    "id": "1002-2026-11-16-023"
+    "isPanel": false,
+    "id": "1002-2026-11-16-018"
   },
   {
     "committeeId": "1002",
@@ -240,7 +213,8 @@ export const schedule = [
     "department": "Biyofizik",
     "lecturer": "Nurten Bahtiyar",
     "type": "course",
-    "id": "1002-2026-11-16-024"
+    "isPanel": false,
+    "id": "1002-2026-11-16-019"
   },
   {
     "committeeId": "1002",
@@ -249,7 +223,8 @@ export const schedule = [
     "department": "Tıbbi Biyokimya",
     "lecturer": "Özlem Balcı Ekmekçi",
     "type": "course",
-    "id": "1002-2026-11-17-025"
+    "isPanel": false,
+    "id": "1002-2026-11-17-020"
   },
   {
     "committeeId": "1002",
@@ -258,7 +233,8 @@ export const schedule = [
     "department": "Tıbbi Biyokimya",
     "lecturer": "Özlem Balcı Ekmekçi",
     "type": "course",
-    "id": "1002-2026-11-17-026"
+    "isPanel": false,
+    "id": "1002-2026-11-17-021"
   },
   {
     "committeeId": "1002",
@@ -267,7 +243,8 @@ export const schedule = [
     "department": "Tıbbi Biyoloji",
     "lecturer": "Ahmet Özaydın",
     "type": "course",
-    "id": "1002-2026-11-17-027"
+    "isPanel": false,
+    "id": "1002-2026-11-17-022"
   },
   {
     "committeeId": "1002",
@@ -276,16 +253,8 @@ export const schedule = [
     "department": "Tıbbi Biyoloji",
     "lecturer": "Onur Baykara",
     "type": "course",
-    "id": "1002-2026-11-17-028"
-  },
-  {
-    "committeeId": "1002",
-    "date": "2026-11-17",
-    "topic": "Güzel Sanatlar I",
-    "department": "Ortak Dersler",
-    "lecturer": "",
-    "type": "course",
-    "id": "1002-2026-11-17-029"
+    "isPanel": false,
+    "id": "1002-2026-11-17-023"
   },
   {
     "committeeId": "1002",
@@ -294,7 +263,8 @@ export const schedule = [
     "department": "Tıbbi Biyoloji",
     "lecturer": "Halide Sema Bolkent",
     "type": "course",
-    "id": "1002-2026-11-18-030"
+    "isPanel": false,
+    "id": "1002-2026-11-18-024"
   },
   {
     "committeeId": "1002",
@@ -303,7 +273,8 @@ export const schedule = [
     "department": "Tıbbi Biyoloji",
     "lecturer": "Ahmet Özaydın",
     "type": "course",
-    "id": "1002-2026-11-18-031"
+    "isPanel": false,
+    "id": "1002-2026-11-18-025"
   },
   {
     "committeeId": "1002",
@@ -312,7 +283,8 @@ export const schedule = [
     "department": "Biyofizik",
     "lecturer": "Handan Tuncel",
     "type": "course",
-    "id": "1002-2026-11-18-032"
+    "isPanel": false,
+    "id": "1002-2026-11-18-026"
   },
   {
     "committeeId": "1002",
@@ -321,16 +293,8 @@ export const schedule = [
     "department": "Biyofizik",
     "lecturer": "Handan Tuncel",
     "type": "course",
-    "id": "1002-2026-11-18-033"
-  },
-  {
-    "committeeId": "1002",
-    "date": "2026-11-18",
-    "topic": "Cerrahi Robotik Sistemler ve Tıpta Uygulamaları (Seçmeli)",
-    "department": "Üroloji",
-    "lecturer": "Bülent Önal",
-    "type": "course",
-    "id": "1002-2026-11-18-034"
+    "isPanel": false,
+    "id": "1002-2026-11-18-027"
   },
   {
     "committeeId": "1002",
@@ -339,7 +303,8 @@ export const schedule = [
     "department": "Biyofizik",
     "lecturer": "Nurten Bahtiyar",
     "type": "course",
-    "id": "1002-2026-11-19-035"
+    "isPanel": false,
+    "id": "1002-2026-11-19-028"
   },
   {
     "committeeId": "1002",
@@ -348,7 +313,8 @@ export const schedule = [
     "department": "Biyofizik",
     "lecturer": "Nurten Bahtiyar",
     "type": "course",
-    "id": "1002-2026-11-19-036"
+    "isPanel": false,
+    "id": "1002-2026-11-19-029"
   },
   {
     "committeeId": "1002",
@@ -357,7 +323,8 @@ export const schedule = [
     "department": "Tıbbi Biyokimya",
     "lecturer": "Karolin Yanar",
     "type": "course",
-    "id": "1002-2026-11-19-037"
+    "isPanel": false,
+    "id": "1002-2026-11-19-030"
   },
   {
     "committeeId": "1002",
@@ -366,34 +333,8 @@ export const schedule = [
     "department": "Tıbbi Biyoloji",
     "lecturer": "Fatma Kaya Dağıstanlı",
     "type": "course",
-    "id": "1002-2026-11-19-038"
-  },
-  {
-    "committeeId": "1002",
-    "date": "2026-11-20",
-    "topic": "Atatürk İlkeleri ve İnkılap Tarihi I",
-    "department": "Ortak Dersler",
-    "lecturer": "",
-    "type": "course",
-    "id": "1002-2026-11-20-039"
-  },
-  {
-    "committeeId": "1002",
-    "date": "2026-11-20",
-    "topic": "Türk Dili ve Edebiyatı I",
-    "department": "Ortak Dersler",
-    "lecturer": "",
-    "type": "course",
-    "id": "1002-2026-11-20-040"
-  },
-  {
-    "committeeId": "1002",
-    "date": "2026-11-20",
-    "topic": "Yabancı Dil I",
-    "department": "Ortak Dersler",
-    "lecturer": "",
-    "type": "course",
-    "id": "1002-2026-11-20-041"
+    "isPanel": false,
+    "id": "1002-2026-11-19-031"
   },
   {
     "committeeId": "1002",
@@ -402,7 +343,8 @@ export const schedule = [
     "department": "Tıbbi Biyoloji",
     "lecturer": "Ahmet Özaydın",
     "type": "course",
-    "id": "1002-2026-11-23-042"
+    "isPanel": false,
+    "id": "1002-2026-11-23-032"
   },
   {
     "committeeId": "1002",
@@ -411,7 +353,8 @@ export const schedule = [
     "department": "Tıbbi Biyokimya",
     "lecturer": "Ahmet Ata Alturfan",
     "type": "course",
-    "id": "1002-2026-11-23-043"
+    "isPanel": false,
+    "id": "1002-2026-11-23-033"
   },
   {
     "committeeId": "1002",
@@ -420,7 +363,8 @@ export const schedule = [
     "department": "Tıbbi Biyoloji",
     "lecturer": "Mehmet Güven",
     "type": "course",
-    "id": "1002-2026-11-23-044"
+    "isPanel": false,
+    "id": "1002-2026-11-23-034"
   },
   {
     "committeeId": "1002",
@@ -429,7 +373,8 @@ export const schedule = [
     "department": "Tıbbi Biyoloji",
     "lecturer": "Mehmet Güven",
     "type": "course",
-    "id": "1002-2026-11-23-045"
+    "isPanel": false,
+    "id": "1002-2026-11-23-035"
   },
   {
     "committeeId": "1002",
@@ -438,7 +383,8 @@ export const schedule = [
     "department": "Biyofizik",
     "lecturer": "Nurten Bahtiyar",
     "type": "course",
-    "id": "1002-2026-11-24-046"
+    "isPanel": false,
+    "id": "1002-2026-11-24-036"
   },
   {
     "committeeId": "1002",
@@ -447,7 +393,8 @@ export const schedule = [
     "department": "Biyofizik",
     "lecturer": "Handan Tuncel",
     "type": "course",
-    "id": "1002-2026-11-24-047"
+    "isPanel": false,
+    "id": "1002-2026-11-24-037"
   },
   {
     "committeeId": "1002",
@@ -456,7 +403,8 @@ export const schedule = [
     "department": "Tıbbi Biyokimya",
     "lecturer": "Ahmet Ata Alturfan",
     "type": "course",
-    "id": "1002-2026-11-24-048"
+    "isPanel": false,
+    "id": "1002-2026-11-24-038"
   },
   {
     "committeeId": "1002",
@@ -465,16 +413,8 @@ export const schedule = [
     "department": "Tıbbi Biyokimya",
     "lecturer": "Karolin Yanar",
     "type": "course",
-    "id": "1002-2026-11-24-049"
-  },
-  {
-    "committeeId": "1002",
-    "date": "2026-11-24",
-    "topic": "Güzel Sanatlar I",
-    "department": "Ortak Dersler",
-    "lecturer": "",
-    "type": "course",
-    "id": "1002-2026-11-24-050"
+    "isPanel": false,
+    "id": "1002-2026-11-24-039"
   },
   {
     "committeeId": "1002",
@@ -483,7 +423,8 @@ export const schedule = [
     "department": "Biyofizik",
     "lecturer": "Nurten Bahtiyar",
     "type": "course",
-    "id": "1002-2026-11-25-051"
+    "isPanel": false,
+    "id": "1002-2026-11-25-040"
   },
   {
     "committeeId": "1002",
@@ -492,7 +433,8 @@ export const schedule = [
     "department": "Biyofizik",
     "lecturer": "Nurten Bahtiyar",
     "type": "course",
-    "id": "1002-2026-11-25-052"
+    "isPanel": false,
+    "id": "1002-2026-11-25-041"
   },
   {
     "committeeId": "1002",
@@ -501,7 +443,8 @@ export const schedule = [
     "department": "Tıbbi Biyoloji",
     "lecturer": "Halide Sema Bolkent",
     "type": "course",
-    "id": "1002-2026-11-25-053"
+    "isPanel": false,
+    "id": "1002-2026-11-25-042"
   },
   {
     "committeeId": "1002",
@@ -510,16 +453,8 @@ export const schedule = [
     "department": "Tıbbi Biyoloji",
     "lecturer": "Halide Sema Bolkent",
     "type": "course",
-    "id": "1002-2026-11-25-054"
-  },
-  {
-    "committeeId": "1002",
-    "date": "2026-11-25",
-    "topic": "Cerrahi Robotik Sistemler ve Tıpta Uygulamaları (Seçmeli)",
-    "department": "Üroloji",
-    "lecturer": "Bülent Önal",
-    "type": "course",
-    "id": "1002-2026-11-25-055"
+    "isPanel": false,
+    "id": "1002-2026-11-25-043"
   },
   {
     "committeeId": "1002",
@@ -528,7 +463,8 @@ export const schedule = [
     "department": "Biyofizik",
     "lecturer": "Handan Tuncel",
     "type": "course",
-    "id": "1002-2026-11-26-056"
+    "isPanel": false,
+    "id": "1002-2026-11-26-044"
   },
   {
     "committeeId": "1002",
@@ -537,7 +473,8 @@ export const schedule = [
     "department": "Biyofizik",
     "lecturer": "Handan Tuncel",
     "type": "course",
-    "id": "1002-2026-11-26-057"
+    "isPanel": false,
+    "id": "1002-2026-11-26-045"
   },
   {
     "committeeId": "1002",
@@ -546,7 +483,8 @@ export const schedule = [
     "department": "Tıbbi Biyokimya",
     "lecturer": "Özlem Balcı Ekmekçi",
     "type": "course",
-    "id": "1002-2026-11-26-058"
+    "isPanel": false,
+    "id": "1002-2026-11-26-046"
   },
   {
     "committeeId": "1002",
@@ -555,34 +493,8 @@ export const schedule = [
     "department": "Tıbbi Biyokimya",
     "lecturer": "Özlem Balcı Ekmekçi",
     "type": "course",
-    "id": "1002-2026-11-26-059"
-  },
-  {
-    "committeeId": "1002",
-    "date": "2026-11-27",
-    "topic": "Atatürk İlkeleri ve İnkılap Tarihi I",
-    "department": "Ortak Dersler",
-    "lecturer": "",
-    "type": "course",
-    "id": "1002-2026-11-27-060"
-  },
-  {
-    "committeeId": "1002",
-    "date": "2026-11-27",
-    "topic": "Türk Dili ve Edebiyatı I",
-    "department": "Ortak Dersler",
-    "lecturer": "",
-    "type": "course",
-    "id": "1002-2026-11-27-061"
-  },
-  {
-    "committeeId": "1002",
-    "date": "2026-11-27",
-    "topic": "Yabancı Dil I",
-    "department": "Ortak Dersler",
-    "lecturer": "",
-    "type": "course",
-    "id": "1002-2026-11-27-062"
+    "isPanel": false,
+    "id": "1002-2026-11-26-047"
   },
   {
     "committeeId": "1002",
@@ -591,7 +503,8 @@ export const schedule = [
     "department": "Tıbbi Biyoloji",
     "lecturer": "Halide Sema Bolkent",
     "type": "course",
-    "id": "1002-2026-11-30-063"
+    "isPanel": false,
+    "id": "1002-2026-11-30-048"
   },
   {
     "committeeId": "1002",
@@ -600,7 +513,8 @@ export const schedule = [
     "department": "Tıbbi Biyokimya",
     "lecturer": "Özlem Balcı Ekmekçi",
     "type": "course",
-    "id": "1002-2026-11-30-064"
+    "isPanel": false,
+    "id": "1002-2026-11-30-049"
   },
   {
     "committeeId": "1002",
@@ -609,7 +523,8 @@ export const schedule = [
     "department": "Tıbbi Biyoloji",
     "lecturer": "Halide Sema Bolkent",
     "type": "course",
-    "id": "1002-2026-11-30-065"
+    "isPanel": false,
+    "id": "1002-2026-11-30-050"
   },
   {
     "committeeId": "1002",
@@ -618,7 +533,8 @@ export const schedule = [
     "department": "Tıbbi Biyoloji",
     "lecturer": "Fatma Dağıstanlı",
     "type": "course",
-    "id": "1002-2026-11-30-066"
+    "isPanel": false,
+    "id": "1002-2026-11-30-051"
   },
   {
     "committeeId": "1002",
@@ -627,7 +543,8 @@ export const schedule = [
     "department": "Tıbbi Biyokimya",
     "lecturer": "Hakan Ekmekçi",
     "type": "course",
-    "id": "1002-2026-12-01-067"
+    "isPanel": false,
+    "id": "1002-2026-12-01-052"
   },
   {
     "committeeId": "1002",
@@ -636,7 +553,8 @@ export const schedule = [
     "department": "Tıbbi Biyokimya",
     "lecturer": "Hakan Ekmekçi",
     "type": "course",
-    "id": "1002-2026-12-01-068"
+    "isPanel": false,
+    "id": "1002-2026-12-01-053"
   },
   {
     "committeeId": "1002",
@@ -645,7 +563,8 @@ export const schedule = [
     "department": "Tıbbi Biyokimya",
     "lecturer": "Karolin Yanar",
     "type": "course",
-    "id": "1002-2026-12-01-069"
+    "isPanel": false,
+    "id": "1002-2026-12-01-054"
   },
   {
     "committeeId": "1002",
@@ -654,16 +573,8 @@ export const schedule = [
     "department": "Tıbbi Biyoloji",
     "lecturer": "İlhan Onaran",
     "type": "course",
-    "id": "1002-2026-12-01-070"
-  },
-  {
-    "committeeId": "1002",
-    "date": "2026-12-01",
-    "topic": "Güzel Sanatlar I",
-    "department": "Ortak Dersler",
-    "lecturer": "",
-    "type": "course",
-    "id": "1002-2026-12-01-071"
+    "isPanel": false,
+    "id": "1002-2026-12-01-055"
   },
   {
     "committeeId": "1002",
@@ -672,7 +583,8 @@ export const schedule = [
     "department": "Biyofizik",
     "lecturer": "Semra Özdemir",
     "type": "course",
-    "id": "1002-2026-12-02-072"
+    "isPanel": false,
+    "id": "1002-2026-12-02-056"
   },
   {
     "committeeId": "1002",
@@ -681,7 +593,8 @@ export const schedule = [
     "department": "Tıbbi Biyokimya",
     "lecturer": "Özlem Balcı Ekmekçi",
     "type": "course",
-    "id": "1002-2026-12-02-073"
+    "isPanel": false,
+    "id": "1002-2026-12-02-057"
   },
   {
     "committeeId": "1002",
@@ -690,7 +603,8 @@ export const schedule = [
     "department": "Tıbbi Biyoloji",
     "lecturer": "Halide Sema Bolkent",
     "type": "course",
-    "id": "1002-2026-12-02-074"
+    "isPanel": false,
+    "id": "1002-2026-12-02-058"
   },
   {
     "committeeId": "1002",
@@ -699,16 +613,8 @@ export const schedule = [
     "department": "Tıbbi Biyokimya",
     "lecturer": "Hakan Ekmekçi",
     "type": "course",
-    "id": "1002-2026-12-02-075"
-  },
-  {
-    "committeeId": "1002",
-    "date": "2026-12-02",
-    "topic": "Cerrahi Robotik Sistemler ve Tıpta Uygulamaları (Seçmeli)",
-    "department": "Üroloji",
-    "lecturer": "Bülent Önal",
-    "type": "course",
-    "id": "1002-2026-12-02-076"
+    "isPanel": false,
+    "id": "1002-2026-12-02-059"
   },
   {
     "committeeId": "1002",
@@ -717,7 +623,8 @@ export const schedule = [
     "department": "Tıbbi Biyoloji",
     "lecturer": "Mehmet Güven",
     "type": "course",
-    "id": "1002-2026-12-03-077"
+    "isPanel": false,
+    "id": "1002-2026-12-03-060"
   },
   {
     "committeeId": "1002",
@@ -726,7 +633,8 @@ export const schedule = [
     "department": "Tıbbi Biyokimya",
     "lecturer": "Özlem Balcı Ekmekçi",
     "type": "course",
-    "id": "1002-2026-12-03-078"
+    "isPanel": false,
+    "id": "1002-2026-12-03-061"
   },
   {
     "committeeId": "1002",
@@ -735,7 +643,8 @@ export const schedule = [
     "department": "Tıbbi Biyoloji",
     "lecturer": "Matem Tunçdemir",
     "type": "course",
-    "id": "1002-2026-12-03-079"
+    "isPanel": false,
+    "id": "1002-2026-12-03-062"
   },
   {
     "committeeId": "1002",
@@ -744,34 +653,8 @@ export const schedule = [
     "department": "Biyofizik",
     "lecturer": "Semra Özdemir",
     "type": "course",
-    "id": "1002-2026-12-03-080"
-  },
-  {
-    "committeeId": "1002",
-    "date": "2026-12-04",
-    "topic": "Atatürk İlkeleri ve İnkılap Tarihi I",
-    "department": "Ortak Dersler",
-    "lecturer": "",
-    "type": "course",
-    "id": "1002-2026-12-04-081"
-  },
-  {
-    "committeeId": "1002",
-    "date": "2026-12-04",
-    "topic": "Türk Dili ve Edebiyatı I",
-    "department": "Ortak Dersler",
-    "lecturer": "",
-    "type": "course",
-    "id": "1002-2026-12-04-082"
-  },
-  {
-    "committeeId": "1002",
-    "date": "2026-12-04",
-    "topic": "Yabancı Dil I",
-    "department": "Ortak Dersler",
-    "lecturer": "",
-    "type": "course",
-    "id": "1002-2026-12-04-083"
+    "isPanel": false,
+    "id": "1002-2026-12-03-063"
   },
   {
     "committeeId": "1002",
@@ -780,7 +663,8 @@ export const schedule = [
     "department": "Tıbbi Biyoloji",
     "lecturer": "Ayşe Çırakoğlu",
     "type": "course",
-    "id": "1002-2026-12-07-084"
+    "isPanel": false,
+    "id": "1002-2026-12-07-064"
   },
   {
     "committeeId": "1002",
@@ -789,7 +673,8 @@ export const schedule = [
     "department": "Tıbbi Biyoloji",
     "lecturer": "Ayşe Çırakoğlu",
     "type": "course",
-    "id": "1002-2026-12-07-085"
+    "isPanel": false,
+    "id": "1002-2026-12-07-065"
   },
   {
     "committeeId": "1002",
@@ -798,7 +683,8 @@ export const schedule = [
     "department": "Tıbbi Biyoloji",
     "lecturer": "İlhan Onaran",
     "type": "course",
-    "id": "1002-2026-12-07-086"
+    "isPanel": false,
+    "id": "1002-2026-12-07-066"
   },
   {
     "committeeId": "1002",
@@ -807,7 +693,8 @@ export const schedule = [
     "department": "Tıbbi Biyoloji",
     "lecturer": "İlhan Onaran",
     "type": "course",
-    "id": "1002-2026-12-07-087"
+    "isPanel": false,
+    "id": "1002-2026-12-07-067"
   },
   {
     "committeeId": "1002",
@@ -816,7 +703,8 @@ export const schedule = [
     "department": "Biyofizik",
     "lecturer": "Semra Özdemir",
     "type": "course",
-    "id": "1002-2026-12-08-088"
+    "isPanel": false,
+    "id": "1002-2026-12-08-068"
   },
   {
     "committeeId": "1002",
@@ -825,7 +713,8 @@ export const schedule = [
     "department": "Biyofizik",
     "lecturer": "Semra Özdemir",
     "type": "course",
-    "id": "1002-2026-12-08-089"
+    "isPanel": false,
+    "id": "1002-2026-12-08-069"
   },
   {
     "committeeId": "1002",
@@ -834,7 +723,8 @@ export const schedule = [
     "department": "Tıbbi Biyokimya",
     "lecturer": "Özlem Balcı Ekmekçi",
     "type": "course",
-    "id": "1002-2026-12-08-090"
+    "isPanel": false,
+    "id": "1002-2026-12-08-070"
   },
   {
     "committeeId": "1002",
@@ -843,16 +733,8 @@ export const schedule = [
     "department": "Tıbbi Biyoloji",
     "lecturer": "Mehmet Güven",
     "type": "course",
-    "id": "1002-2026-12-08-091"
-  },
-  {
-    "committeeId": "1002",
-    "date": "2026-12-08",
-    "topic": "Güzel Sanatlar I",
-    "department": "Ortak Dersler",
-    "lecturer": "",
-    "type": "course",
-    "id": "1002-2026-12-08-092"
+    "isPanel": false,
+    "id": "1002-2026-12-08-071"
   },
   {
     "committeeId": "1002",
@@ -861,16 +743,8 @@ export const schedule = [
     "department": "",
     "lecturer": "",
     "type": "study",
-    "id": "1002-2026-12-09-093"
-  },
-  {
-    "committeeId": "1002",
-    "date": "2026-12-09",
-    "topic": "Cerrahi Robotik Sistemler ve Tıpta Uygulamaları (Seçmeli)",
-    "department": "Üroloji",
-    "lecturer": "Bülent Önal",
-    "type": "course",
-    "id": "1002-2026-12-09-094"
+    "isPanel": false,
+    "id": "1002-2026-12-09-072"
   },
   {
     "committeeId": "1002",
@@ -879,7 +753,8 @@ export const schedule = [
     "department": "",
     "lecturer": "",
     "type": "study",
-    "id": "1002-2026-12-10-095"
+    "isPanel": false,
+    "id": "1002-2026-12-10-073"
   },
   {
     "committeeId": "1002",
@@ -888,25 +763,8 @@ export const schedule = [
     "department": "",
     "lecturer": "",
     "type": "exam",
-    "id": "1002-2026-12-11-096"
-  },
-  {
-    "committeeId": "1002",
-    "date": "2026-12-11",
-    "topic": "Türk Dili ve Edebiyatı I",
-    "department": "Ortak Dersler",
-    "lecturer": "",
-    "type": "course",
-    "id": "1002-2026-12-11-097"
-  },
-  {
-    "committeeId": "1002",
-    "date": "2026-12-11",
-    "topic": "Yabancı Dil I",
-    "department": "Ortak Dersler",
-    "lecturer": "",
-    "type": "course",
-    "id": "1002-2026-12-11-098"
+    "isPanel": false,
+    "id": "1002-2026-12-11-074"
   },
   {
     "committeeId": "1002",
@@ -915,7 +773,8 @@ export const schedule = [
     "department": "",
     "lecturer": "",
     "type": "ceremony",
-    "id": "1002-2026-12-14-099"
+    "isPanel": false,
+    "id": "1002-2026-12-14-075"
   },
   {
     "committeeId": "1002",
@@ -924,7 +783,8 @@ export const schedule = [
     "department": "Tıbbi Biyokimya",
     "lecturer": "Özlem Balcı Ekmekçi",
     "type": "course",
-    "id": "1002-2026-12-15-100"
+    "isPanel": false,
+    "id": "1002-2026-12-15-076"
   },
   {
     "committeeId": "1002",
@@ -933,7 +793,8 @@ export const schedule = [
     "department": "Tıbbi Biyokimya",
     "lecturer": "Pınar Atukeren",
     "type": "course",
-    "id": "1002-2026-12-15-101"
+    "isPanel": false,
+    "id": "1002-2026-12-15-077"
   },
   {
     "committeeId": "1002",
@@ -942,7 +803,8 @@ export const schedule = [
     "department": "Biyofizik",
     "lecturer": "Semra Özdemir",
     "type": "course",
-    "id": "1002-2026-12-15-102"
+    "isPanel": false,
+    "id": "1002-2026-12-15-078"
   },
   {
     "committeeId": "1002",
@@ -951,16 +813,8 @@ export const schedule = [
     "department": "Tıbbi Biyoloji",
     "lecturer": "Burcu Bayoğlu",
     "type": "course",
-    "id": "1002-2026-12-15-103"
-  },
-  {
-    "committeeId": "1002",
-    "date": "2026-12-15",
-    "topic": "Güzel Sanatlar I",
-    "department": "Ortak Dersler",
-    "lecturer": "",
-    "type": "course",
-    "id": "1002-2026-12-15-104"
+    "isPanel": false,
+    "id": "1002-2026-12-15-079"
   },
   {
     "committeeId": "1002",
@@ -969,7 +823,8 @@ export const schedule = [
     "department": "Biyofizik",
     "lecturer": "Devrim Sarıbal",
     "type": "course",
-    "id": "1002-2026-12-16-105"
+    "isPanel": false,
+    "id": "1002-2026-12-16-080"
   },
   {
     "committeeId": "1002",
@@ -978,7 +833,8 @@ export const schedule = [
     "department": "Biyofizik",
     "lecturer": "Devrim Sarıbal",
     "type": "course",
-    "id": "1002-2026-12-16-106"
+    "isPanel": false,
+    "id": "1002-2026-12-16-081"
   },
   {
     "committeeId": "1002",
@@ -987,7 +843,9 @@ export const schedule = [
     "department": "Göğüs Cerrahisi",
     "lecturer": "Akif Turna",
     "type": "course",
-    "id": "1002-2026-12-16-107"
+    "isPanel": true,
+    "panelGroup": "Göğüs Cerrahisi",
+    "id": "1002-2026-12-16-082"
   },
   {
     "committeeId": "1002",
@@ -996,16 +854,9 @@ export const schedule = [
     "department": "Göğüs Cerrahisi",
     "lecturer": "Akif Turna",
     "type": "course",
-    "id": "1002-2026-12-16-108"
-  },
-  {
-    "committeeId": "1002",
-    "date": "2026-12-16",
-    "topic": "Cerrahi Robotik Sistemler ve Tıpta Uygulamaları (Seçmeli)",
-    "department": "Üroloji",
-    "lecturer": "Bülent Önal",
-    "type": "course",
-    "id": "1002-2026-12-16-109"
+    "isPanel": true,
+    "panelGroup": "Göğüs Cerrahisi",
+    "id": "1002-2026-12-16-083"
   },
   {
     "committeeId": "1002",
@@ -1014,7 +865,8 @@ export const schedule = [
     "department": "Tıbbi Biyokimya",
     "lecturer": "Hakan Ekmekçi",
     "type": "course",
-    "id": "1002-2026-12-17-110"
+    "isPanel": false,
+    "id": "1002-2026-12-17-084"
   },
   {
     "committeeId": "1002",
@@ -1023,7 +875,8 @@ export const schedule = [
     "department": "Tıbbi Biyoloji",
     "lecturer": "Turgut Ulutin",
     "type": "course",
-    "id": "1002-2026-12-17-111"
+    "isPanel": false,
+    "id": "1002-2026-12-17-085"
   },
   {
     "committeeId": "1002",
@@ -1032,7 +885,9 @@ export const schedule = [
     "department": "Tıp Eğitimi",
     "lecturer": "Özlem Serpil Çakmakkaya",
     "type": "course",
-    "id": "1002-2026-12-17-112"
+    "isPanel": true,
+    "panelGroup": "Tıp Eğitimi",
+    "id": "1002-2026-12-17-086"
   },
   {
     "committeeId": "1002",
@@ -1041,34 +896,9 @@ export const schedule = [
     "department": "Tıp Eğitimi",
     "lecturer": "Özlem Serpil Çakmakkaya",
     "type": "course",
-    "id": "1002-2026-12-17-113"
-  },
-  {
-    "committeeId": "1002",
-    "date": "2026-12-18",
-    "topic": "Atatürk İlkeleri ve İnkılap Tarihi I",
-    "department": "Ortak Dersler",
-    "lecturer": "",
-    "type": "course",
-    "id": "1002-2026-12-18-114"
-  },
-  {
-    "committeeId": "1002",
-    "date": "2026-12-18",
-    "topic": "Türk Dili ve Edebiyatı I",
-    "department": "Ortak Dersler",
-    "lecturer": "",
-    "type": "course",
-    "id": "1002-2026-12-18-115"
-  },
-  {
-    "committeeId": "1002",
-    "date": "2026-12-18",
-    "topic": "Yabancı Dil I",
-    "department": "Ortak Dersler",
-    "lecturer": "",
-    "type": "course",
-    "id": "1002-2026-12-18-116"
+    "isPanel": true,
+    "panelGroup": "Tıp Eğitimi",
+    "id": "1002-2026-12-17-087"
   },
   {
     "committeeId": "1002",
@@ -1077,7 +907,8 @@ export const schedule = [
     "department": "Tıbbi Biyokimya",
     "lecturer": "Remise Gelişgen",
     "type": "course",
-    "id": "1002-2026-12-21-117"
+    "isPanel": false,
+    "id": "1002-2026-12-21-088"
   },
   {
     "committeeId": "1002",
@@ -1086,7 +917,9 @@ export const schedule = [
     "department": "Tıbbi Biyoloji",
     "lecturer": "Onur Baykara",
     "type": "course",
-    "id": "1002-2026-12-21-118"
+    "isPanel": true,
+    "panelGroup": "Tıbbi Biyoloji",
+    "id": "1002-2026-12-21-089"
   },
   {
     "committeeId": "1002",
@@ -1095,7 +928,9 @@ export const schedule = [
     "department": "Halk Sağlığı",
     "lecturer": "Mehmet Sait Değer",
     "type": "course",
-    "id": "1002-2026-12-21-119"
+    "isPanel": true,
+    "panelGroup": "Halk Sağlığı",
+    "id": "1002-2026-12-21-090"
   },
   {
     "committeeId": "1002",
@@ -1104,7 +939,9 @@ export const schedule = [
     "department": "Halk Sağlığı",
     "lecturer": "Beril Kara Esen",
     "type": "course",
-    "id": "1002-2026-12-21-120"
+    "isPanel": true,
+    "panelGroup": "Halk Sağlığı",
+    "id": "1002-2026-12-21-091"
   },
   {
     "committeeId": "1002",
@@ -1113,7 +950,8 @@ export const schedule = [
     "department": "Tıbbi Biyokimya",
     "lecturer": "Remise Gelişgen",
     "type": "course",
-    "id": "1002-2026-12-22-121"
+    "isPanel": false,
+    "id": "1002-2026-12-22-092"
   },
   {
     "committeeId": "1002",
@@ -1122,7 +960,9 @@ export const schedule = [
     "department": "Histoloji ve Embriyoloji",
     "lecturer": "Gözde Erkanlı Şentürk",
     "type": "course",
-    "id": "1002-2026-12-22-122"
+    "isPanel": true,
+    "panelGroup": "Histoloji ve Embriyoloji",
+    "id": "1002-2026-12-22-093"
   },
   {
     "committeeId": "1002",
@@ -1131,7 +971,8 @@ export const schedule = [
     "department": "Tıbbi Biyoloji",
     "lecturer": "Fatma Kaya Dağıstanlı",
     "type": "course",
-    "id": "1002-2026-12-22-123"
+    "isPanel": false,
+    "id": "1002-2026-12-22-094"
   },
   {
     "committeeId": "1002",
@@ -1140,16 +981,8 @@ export const schedule = [
     "department": "Tıbbi Biyoloji",
     "lecturer": "Fatma Kaya Dağıstanlı",
     "type": "course",
-    "id": "1002-2026-12-22-124"
-  },
-  {
-    "committeeId": "1002",
-    "date": "2026-12-22",
-    "topic": "Güzel Sanatlar I",
-    "department": "Ortak Dersler",
-    "lecturer": "",
-    "type": "course",
-    "id": "1002-2026-12-22-125"
+    "isPanel": false,
+    "id": "1002-2026-12-22-095"
   },
   {
     "committeeId": "1002",
@@ -1158,7 +991,9 @@ export const schedule = [
     "department": "Pediatri",
     "lecturer": "Mehmet Yıldız",
     "type": "course",
-    "id": "1002-2026-12-23-126"
+    "isPanel": true,
+    "panelGroup": "Pediatri",
+    "id": "1002-2026-12-23-096"
   },
   {
     "committeeId": "1002",
@@ -1167,7 +1002,8 @@ export const schedule = [
     "department": "Biyofizik",
     "lecturer": "Devrim Sarıbal",
     "type": "course",
-    "id": "1002-2026-12-23-127"
+    "isPanel": false,
+    "id": "1002-2026-12-23-097"
   },
   {
     "committeeId": "1002",
@@ -1176,7 +1012,9 @@ export const schedule = [
     "department": "Göğüs Cerrahisi",
     "lecturer": "Akif Turna",
     "type": "course",
-    "id": "1002-2026-12-23-128"
+    "isPanel": true,
+    "panelGroup": "Göğüs Cerrahisi",
+    "id": "1002-2026-12-23-098"
   },
   {
     "committeeId": "1002",
@@ -1185,16 +1023,9 @@ export const schedule = [
     "department": "Göğüs Cerrahisi",
     "lecturer": "Akif Turna",
     "type": "course",
-    "id": "1002-2026-12-23-129"
-  },
-  {
-    "committeeId": "1002",
-    "date": "2026-12-23",
-    "topic": "Cerrahi Robotik Sistemler ve Tıpta Uygulamaları (Seçmeli)",
-    "department": "Üroloji",
-    "lecturer": "Bülent Önal",
-    "type": "course",
-    "id": "1002-2026-12-23-130"
+    "isPanel": true,
+    "panelGroup": "Göğüs Cerrahisi",
+    "id": "1002-2026-12-23-099"
   },
   {
     "committeeId": "1002",
@@ -1203,7 +1034,8 @@ export const schedule = [
     "department": "Biyofizik",
     "lecturer": "Alev Meltem Ercan",
     "type": "course",
-    "id": "1002-2026-12-24-131"
+    "isPanel": false,
+    "id": "1002-2026-12-24-100"
   },
   {
     "committeeId": "1002",
@@ -1212,7 +1044,8 @@ export const schedule = [
     "department": "Biyofizik",
     "lecturer": "Alev Meltem Ercan",
     "type": "course",
-    "id": "1002-2026-12-24-132"
+    "isPanel": false,
+    "id": "1002-2026-12-24-101"
   },
   {
     "committeeId": "1002",
@@ -1221,7 +1054,8 @@ export const schedule = [
     "department": "Biyofizik",
     "lecturer": "Alev Meltem Ercan",
     "type": "course",
-    "id": "1002-2026-12-24-133"
+    "isPanel": false,
+    "id": "1002-2026-12-24-102"
   },
   {
     "committeeId": "1002",
@@ -1230,7 +1064,8 @@ export const schedule = [
     "department": "Tıbbi Biyoloji",
     "lecturer": "Ahmet Özaydın",
     "type": "course",
-    "id": "1002-2026-12-24-134"
+    "isPanel": false,
+    "id": "1002-2026-12-24-103"
   },
   {
     "committeeId": "1002",
@@ -1239,7 +1074,8 @@ export const schedule = [
     "department": "Biyofizik",
     "lecturer": "Devrim Sarıbal",
     "type": "course",
-    "id": "1002-2026-12-25-135"
+    "isPanel": false,
+    "id": "1002-2026-12-25-104"
   },
   {
     "committeeId": "1002",
@@ -1248,7 +1084,8 @@ export const schedule = [
     "department": "Biyofizik",
     "lecturer": "Devrim Sarıbal",
     "type": "course",
-    "id": "1002-2026-12-25-136"
+    "isPanel": false,
+    "id": "1002-2026-12-25-105"
   },
   {
     "committeeId": "1002",
@@ -1257,7 +1094,9 @@ export const schedule = [
     "department": "Biyoistatistik ve Tıp Bilişimi",
     "lecturer": "Osman M. Uğurel",
     "type": "course",
-    "id": "1002-2026-12-25-137"
+    "isPanel": true,
+    "panelGroup": "Biyoistatistik ve Tıp Bilişimi",
+    "id": "1002-2026-12-25-106"
   },
   {
     "committeeId": "1002",
@@ -1266,7 +1105,9 @@ export const schedule = [
     "department": "Tıp Tarihi ve Etik",
     "lecturer": "Ahmet Özdinç",
     "type": "course",
-    "id": "1002-2026-12-25-138"
+    "isPanel": true,
+    "panelGroup": "Tıp Tarihi ve Etik",
+    "id": "1002-2026-12-25-107"
   },
   {
     "committeeId": "1002",
@@ -1275,7 +1116,9 @@ export const schedule = [
     "department": "Halk Sağlığı",
     "lecturer": "Beril Kara Esen",
     "type": "course",
-    "id": "1002-2026-12-28-139"
+    "isPanel": true,
+    "panelGroup": "Halk Sağlığı",
+    "id": "1002-2026-12-28-108"
   },
   {
     "committeeId": "1002",
@@ -1284,16 +1127,20 @@ export const schedule = [
     "department": "Biyoistatistik ve Tıp Bilişimi",
     "lecturer": "Abdulahad Bayraktar",
     "type": "course",
-    "id": "1002-2026-12-28-140"
+    "isPanel": true,
+    "panelGroup": "Biyoistatistik ve Tıp Bilişimi",
+    "id": "1002-2026-12-28-109"
   },
   {
     "committeeId": "1002",
     "date": "2026-12-28",
     "topic": "Bilimsel Araştırmalarda Ölçüm Güvenilirliği ve Geçerliliği: Temel Kavramlar ve Uygulamalar",
-    "department": "Biyokimya",
+    "department": "Tıbbi Biyokimya",
     "lecturer": "Ufuk ÇAKATAY",
     "type": "course",
-    "id": "1002-2026-12-28-141"
+    "isPanel": true,
+    "panelGroup": "Tıbbi Biyokimya",
+    "id": "1002-2026-12-28-110"
   },
   {
     "committeeId": "1002",
@@ -1302,7 +1149,8 @@ export const schedule = [
     "department": "Biyofizik",
     "lecturer": "Semra Özdemir",
     "type": "course",
-    "id": "1002-2026-12-28-142"
+    "isPanel": false,
+    "id": "1002-2026-12-28-111"
   },
   {
     "committeeId": "1002",
@@ -1311,7 +1159,8 @@ export const schedule = [
     "department": "Tıbbi Biyoloji",
     "lecturer": "Fatma Kaya Dağıstanlı",
     "type": "course",
-    "id": "1002-2026-12-29-143"
+    "isPanel": false,
+    "id": "1002-2026-12-29-112"
   },
   {
     "committeeId": "1002",
@@ -1320,7 +1169,8 @@ export const schedule = [
     "department": "Tıbbi Biyoloji",
     "lecturer": "Halide Sema Bolkent",
     "type": "course",
-    "id": "1002-2026-12-29-144"
+    "isPanel": false,
+    "id": "1002-2026-12-29-113"
   },
   {
     "committeeId": "1002",
@@ -1329,7 +1179,9 @@ export const schedule = [
     "department": "Biyoistatistik ve Tıp Bilişimi",
     "lecturer": "Osman M. Uğurel",
     "type": "course",
-    "id": "1002-2026-12-29-145"
+    "isPanel": true,
+    "panelGroup": "Biyoistatistik ve Tıp Bilişimi",
+    "id": "1002-2026-12-29-114"
   },
   {
     "committeeId": "1002",
@@ -1338,16 +1190,9 @@ export const schedule = [
     "department": "Biyoistatistik ve Tıp Bilişimi",
     "lecturer": "Osman M. Uğurel",
     "type": "course",
-    "id": "1002-2026-12-29-146"
-  },
-  {
-    "committeeId": "1002",
-    "date": "2026-12-29",
-    "topic": "Güzel Sanatlar I",
-    "department": "Ortak Dersler",
-    "lecturer": "",
-    "type": "course",
-    "id": "1002-2026-12-29-147"
+    "isPanel": true,
+    "panelGroup": "Biyoistatistik ve Tıp Bilişimi",
+    "id": "1002-2026-12-29-115"
   },
   {
     "committeeId": "1002",
@@ -1356,7 +1201,8 @@ export const schedule = [
     "department": "Biyofizik",
     "lecturer": "Alev Meltem Ercan",
     "type": "course",
-    "id": "1002-2026-12-30-148"
+    "isPanel": false,
+    "id": "1002-2026-12-30-116"
   },
   {
     "committeeId": "1002",
@@ -1365,7 +1211,8 @@ export const schedule = [
     "department": "Biyofizik",
     "lecturer": "Alev Meltem Ercan",
     "type": "course",
-    "id": "1002-2026-12-30-149"
+    "isPanel": false,
+    "id": "1002-2026-12-30-117"
   },
   {
     "committeeId": "1002",
@@ -1374,7 +1221,8 @@ export const schedule = [
     "department": "Tıbbi Biyoloji",
     "lecturer": "Fatma Dağıstanlı",
     "type": "course",
-    "id": "1002-2026-12-30-150"
+    "isPanel": false,
+    "id": "1002-2026-12-30-118"
   },
   {
     "committeeId": "1002",
@@ -1383,16 +1231,8 @@ export const schedule = [
     "department": "Tıbbi Biyoloji",
     "lecturer": "Ayşe Nur Buyru",
     "type": "course",
-    "id": "1002-2026-12-30-151"
-  },
-  {
-    "committeeId": "1002",
-    "date": "2026-12-30",
-    "topic": "Cerrahi Robotik Sistemler ve Tıpta Uygulamaları (Seçmeli)",
-    "department": "Üroloji",
-    "lecturer": "Bülent Önal",
-    "type": "course",
-    "id": "1002-2026-12-30-152"
+    "isPanel": false,
+    "id": "1002-2026-12-30-119"
   },
   {
     "committeeId": "1002",
@@ -1401,7 +1241,8 @@ export const schedule = [
     "department": "",
     "lecturer": "",
     "type": "study",
-    "id": "1002-2026-12-31-153"
+    "isPanel": false,
+    "id": "1002-2026-12-31-120"
   },
   {
     "committeeId": "1002",
@@ -1410,7 +1251,8 @@ export const schedule = [
     "department": "",
     "lecturer": "",
     "type": "holiday",
-    "id": "1002-2027-01-01-154"
+    "isPanel": false,
+    "id": "1002-2027-01-01-121"
   },
   {
     "committeeId": "1002",
@@ -1419,7 +1261,8 @@ export const schedule = [
     "department": "",
     "lecturer": "",
     "type": "study",
-    "id": "1002-2027-01-04-155"
+    "isPanel": false,
+    "id": "1002-2027-01-04-122"
   },
   {
     "committeeId": "1002",
@@ -1428,16 +1271,8 @@ export const schedule = [
     "department": "",
     "lecturer": "",
     "type": "study",
-    "id": "1002-2027-01-05-156"
-  },
-  {
-    "committeeId": "1002",
-    "date": "2027-01-05",
-    "topic": "Güzel Sanatlar I",
-    "department": "Ortak Dersler",
-    "lecturer": "",
-    "type": "course",
-    "id": "1002-2027-01-05-157"
+    "isPanel": false,
+    "id": "1002-2027-01-05-123"
   },
   {
     "committeeId": "1002",
@@ -1446,16 +1281,8 @@ export const schedule = [
     "department": "",
     "lecturer": "",
     "type": "study",
-    "id": "1002-2027-01-06-158"
-  },
-  {
-    "committeeId": "1002",
-    "date": "2027-01-06",
-    "topic": "Cerrahi Robotik Sistemler ve Tıpta Uygulamaları (Seçmeli)",
-    "department": "Üroloji",
-    "lecturer": "Bülent Önal",
-    "type": "course",
-    "id": "1002-2027-01-06-159"
+    "isPanel": false,
+    "id": "1002-2027-01-06-124"
   },
   {
     "committeeId": "1002",
@@ -1464,34 +1291,8 @@ export const schedule = [
     "department": "",
     "lecturer": "",
     "type": "study",
-    "id": "1002-2027-01-07-160"
-  },
-  {
-    "committeeId": "1002",
-    "date": "2027-01-08",
-    "topic": "Atatürk İlkeleri ve İnkılap Tarihi I",
-    "department": "Ortak Dersler",
-    "lecturer": "",
-    "type": "course",
-    "id": "1002-2027-01-08-161"
-  },
-  {
-    "committeeId": "1002",
-    "date": "2027-01-08",
-    "topic": "Türk Dili ve Edebiyatı I",
-    "department": "Ortak Dersler",
-    "lecturer": "",
-    "type": "course",
-    "id": "1002-2027-01-08-162"
-  },
-  {
-    "committeeId": "1002",
-    "date": "2027-01-08",
-    "topic": "Yabancı Dil I",
-    "department": "Ortak Dersler",
-    "lecturer": "",
-    "type": "course",
-    "id": "1002-2027-01-08-163"
+    "isPanel": false,
+    "id": "1002-2027-01-07-125"
   },
   {
     "committeeId": "1002",
@@ -1500,7 +1301,8 @@ export const schedule = [
     "department": "",
     "lecturer": "",
     "type": "study",
-    "id": "1002-2027-01-11-164"
+    "isPanel": false,
+    "id": "1002-2027-01-11-126"
   },
   {
     "committeeId": "1002",
@@ -1509,7 +1311,8 @@ export const schedule = [
     "department": "",
     "lecturer": "",
     "type": "study",
-    "id": "1002-2027-01-12-165"
+    "isPanel": false,
+    "id": "1002-2027-01-12-127"
   },
   {
     "committeeId": "1002",
@@ -1518,7 +1321,8 @@ export const schedule = [
     "department": "",
     "lecturer": "",
     "type": "exam",
-    "id": "1002-2027-01-13-166"
+    "isPanel": false,
+    "id": "1002-2027-01-13-128"
   },
   {
     "committeeId": "1002",
@@ -1527,7 +1331,8 @@ export const schedule = [
     "department": "",
     "lecturer": "",
     "type": "study",
-    "id": "1002-2027-01-14-167"
+    "isPanel": false,
+    "id": "1002-2027-01-14-129"
   },
   {
     "committeeId": "1002",
@@ -1536,7 +1341,8 @@ export const schedule = [
     "department": "",
     "lecturer": "",
     "type": "study",
-    "id": "1002-2027-01-15-168"
+    "isPanel": false,
+    "id": "1002-2027-01-15-130"
   },
   {
     "committeeId": "1002",
@@ -1545,7 +1351,8 @@ export const schedule = [
     "department": "",
     "lecturer": "",
     "type": "study",
-    "id": "1002-2027-01-18-169"
+    "isPanel": false,
+    "id": "1002-2027-01-18-131"
   },
   {
     "committeeId": "1002",
@@ -1554,7 +1361,8 @@ export const schedule = [
     "department": "",
     "lecturer": "",
     "type": "study",
-    "id": "1002-2027-01-20-170"
+    "isPanel": false,
+    "id": "1002-2027-01-20-132"
   },
   {
     "committeeId": "1002",
@@ -1563,7 +1371,8 @@ export const schedule = [
     "department": "",
     "lecturer": "",
     "type": "exam",
-    "id": "1002-2027-01-21-171"
+    "isPanel": false,
+    "id": "1002-2027-01-21-133"
   },
   {
     "committeeId": "1003",
@@ -1572,7 +1381,8 @@ export const schedule = [
     "department": "Ders Kurulu",
     "lecturer": "",
     "type": "course",
-    "id": "1003-2027-02-08-172"
+    "isPanel": false,
+    "id": "1003-2027-02-08-134"
   },
   {
     "committeeId": "1003",
@@ -1581,7 +1391,8 @@ export const schedule = [
     "department": "Histoloji ve Embriyoloji",
     "lecturer": "Meral Koyutürk",
     "type": "course",
-    "id": "1003-2027-02-08-173"
+    "isPanel": false,
+    "id": "1003-2027-02-08-135"
   },
   {
     "committeeId": "1003",
@@ -1590,7 +1401,8 @@ export const schedule = [
     "department": "Tıbbi Biyokimya",
     "lecturer": "Pınar Atukeren",
     "type": "course",
-    "id": "1003-2027-02-08-174"
+    "isPanel": false,
+    "id": "1003-2027-02-08-136"
   },
   {
     "committeeId": "1003",
@@ -1599,7 +1411,8 @@ export const schedule = [
     "department": "Tıbbi Biyokimya",
     "lecturer": "Pınar Atukeren",
     "type": "course",
-    "id": "1003-2027-02-08-175"
+    "isPanel": false,
+    "id": "1003-2027-02-08-137"
   },
   {
     "committeeId": "1003",
@@ -1608,7 +1421,8 @@ export const schedule = [
     "department": "Tıbbi Biyoloji",
     "lecturer": "Onur Baykara",
     "type": "course",
-    "id": "1003-2027-02-09-176"
+    "isPanel": false,
+    "id": "1003-2027-02-09-138"
   },
   {
     "committeeId": "1003",
@@ -1617,7 +1431,8 @@ export const schedule = [
     "department": "Histoloji ve Embriyoloji",
     "lecturer": "Gamze Tanrıverdi",
     "type": "course",
-    "id": "1003-2027-02-09-177"
+    "isPanel": false,
+    "id": "1003-2027-02-09-139"
   },
   {
     "committeeId": "1003",
@@ -1626,7 +1441,8 @@ export const schedule = [
     "department": "Fizyoloji",
     "lecturer": "Aykut Oruç",
     "type": "course",
-    "id": "1003-2027-02-09-178"
+    "isPanel": false,
+    "id": "1003-2027-02-09-140"
   },
   {
     "committeeId": "1003",
@@ -1635,16 +1451,8 @@ export const schedule = [
     "department": "Fizyoloji",
     "lecturer": "Aykut Oruç",
     "type": "course",
-    "id": "1003-2027-02-09-179"
-  },
-  {
-    "committeeId": "1003",
-    "date": "2027-02-09",
-    "topic": "Güzel Sanatlar II",
-    "department": "Ortak Dersler",
-    "lecturer": "",
-    "type": "course",
-    "id": "1003-2027-02-09-180"
+    "isPanel": false,
+    "id": "1003-2027-02-09-141"
   },
   {
     "committeeId": "1003",
@@ -1653,7 +1461,8 @@ export const schedule = [
     "department": "Tıbbi Biyoloji",
     "lecturer": "Matem Tunçdemir",
     "type": "course",
-    "id": "1003-2027-02-10-181"
+    "isPanel": false,
+    "id": "1003-2027-02-10-142"
   },
   {
     "committeeId": "1003",
@@ -1662,7 +1471,8 @@ export const schedule = [
     "department": "Tıbbi Biyoloji",
     "lecturer": "Onur Baykara",
     "type": "course",
-    "id": "1003-2027-02-10-182"
+    "isPanel": false,
+    "id": "1003-2027-02-10-143"
   },
   {
     "committeeId": "1003",
@@ -1671,7 +1481,8 @@ export const schedule = [
     "department": "Histoloji ve Embriyoloji",
     "lecturer": "Gamze Tanrıverdi",
     "type": "course",
-    "id": "1003-2027-02-10-183"
+    "isPanel": false,
+    "id": "1003-2027-02-10-144"
   },
   {
     "committeeId": "1003",
@@ -1680,16 +1491,8 @@ export const schedule = [
     "department": "Histoloji ve Embriyoloji",
     "lecturer": "Gamze Tanrıverdi",
     "type": "course",
-    "id": "1003-2027-02-10-184"
-  },
-  {
-    "committeeId": "1003",
-    "date": "2027-02-10",
-    "topic": "İletişim Becerileri",
-    "department": "Seçmeli Ders",
-    "lecturer": "Ramazan Arslan",
-    "type": "course",
-    "id": "1003-2027-02-10-185"
+    "isPanel": false,
+    "id": "1003-2027-02-10-145"
   },
   {
     "committeeId": "1003",
@@ -1698,7 +1501,8 @@ export const schedule = [
     "department": "Tıbbi Biyokimya",
     "lecturer": "Hakan Ekmekçi",
     "type": "course",
-    "id": "1003-2027-02-11-186"
+    "isPanel": false,
+    "id": "1003-2027-02-11-146"
   },
   {
     "committeeId": "1003",
@@ -1707,7 +1511,8 @@ export const schedule = [
     "department": "Tıbbi Biyokimya",
     "lecturer": "Hakan Ekmekçi",
     "type": "course",
-    "id": "1003-2027-02-11-187"
+    "isPanel": false,
+    "id": "1003-2027-02-11-147"
   },
   {
     "committeeId": "1003",
@@ -1716,7 +1521,8 @@ export const schedule = [
     "department": "Tıbbi Biyoloji",
     "lecturer": "Ali Nur Turgut Ulutin",
     "type": "course",
-    "id": "1003-2027-02-11-188"
+    "isPanel": false,
+    "id": "1003-2027-02-11-148"
   },
   {
     "committeeId": "1003",
@@ -1725,16 +1531,8 @@ export const schedule = [
     "department": "Tıbbi Biyoloji",
     "lecturer": "Mehmet Güven",
     "type": "course",
-    "id": "1003-2027-02-11-189"
-  },
-  {
-    "committeeId": "1003",
-    "date": "2027-02-11",
-    "topic": "Yapay Zekâ",
-    "department": "Seçmeli Ders",
-    "lecturer": "Ahmet Baş",
-    "type": "course",
-    "id": "1003-2027-02-11-190"
+    "isPanel": false,
+    "id": "1003-2027-02-11-149"
   },
   {
     "committeeId": "1003",
@@ -1743,7 +1541,8 @@ export const schedule = [
     "department": "",
     "lecturer": "",
     "type": "event",
-    "id": "1003-2027-02-12-191"
+    "isPanel": false,
+    "id": "1003-2027-02-12-150"
   },
   {
     "committeeId": "1003",
@@ -1752,7 +1551,8 @@ export const schedule = [
     "department": "Fizyoloji",
     "lecturer": "Aykut Oruç",
     "type": "course",
-    "id": "1003-2027-02-15-192"
+    "isPanel": false,
+    "id": "1003-2027-02-15-151"
   },
   {
     "committeeId": "1003",
@@ -1761,7 +1561,8 @@ export const schedule = [
     "department": "Fizyoloji",
     "lecturer": "Aykut Oruç",
     "type": "course",
-    "id": "1003-2027-02-15-193"
+    "isPanel": false,
+    "id": "1003-2027-02-15-152"
   },
   {
     "committeeId": "1003",
@@ -1770,7 +1571,8 @@ export const schedule = [
     "department": "Histoloji ve Embriyoloji",
     "lecturer": "Gamze Tanrıverdi",
     "type": "course",
-    "id": "1003-2027-02-15-194"
+    "isPanel": false,
+    "id": "1003-2027-02-15-153"
   },
   {
     "committeeId": "1003",
@@ -1779,7 +1581,8 @@ export const schedule = [
     "department": "Histoloji ve Embriyoloji",
     "lecturer": "Gamze Tanrıverdi",
     "type": "course",
-    "id": "1003-2027-02-15-195"
+    "isPanel": false,
+    "id": "1003-2027-02-15-154"
   },
   {
     "committeeId": "1003",
@@ -1788,7 +1591,8 @@ export const schedule = [
     "department": "Histoloji ve Embriyoloji",
     "lecturer": "Gamze Tanrıverdi",
     "type": "course",
-    "id": "1003-2027-02-16-196"
+    "isPanel": false,
+    "id": "1003-2027-02-16-155"
   },
   {
     "committeeId": "1003",
@@ -1797,7 +1601,8 @@ export const schedule = [
     "department": "Histoloji ve Embriyoloji",
     "lecturer": "Gamze Tanrıverdi",
     "type": "course",
-    "id": "1003-2027-02-16-197"
+    "isPanel": false,
+    "id": "1003-2027-02-16-156"
   },
   {
     "committeeId": "1003",
@@ -1806,7 +1611,8 @@ export const schedule = [
     "department": "Tıbbi Biyokimya",
     "lecturer": "Hakan Ekmekçi",
     "type": "course",
-    "id": "1003-2027-02-16-198"
+    "isPanel": false,
+    "id": "1003-2027-02-16-157"
   },
   {
     "committeeId": "1003",
@@ -1815,16 +1621,8 @@ export const schedule = [
     "department": "Tıbbi Biyokimya",
     "lecturer": "Hakan Ekmekçi",
     "type": "course",
-    "id": "1003-2027-02-16-199"
-  },
-  {
-    "committeeId": "1003",
-    "date": "2027-02-16",
-    "topic": "Güzel Sanatlar II",
-    "department": "Ortak Dersler",
-    "lecturer": "",
-    "type": "course",
-    "id": "1003-2027-02-16-200"
+    "isPanel": false,
+    "id": "1003-2027-02-16-158"
   },
   {
     "committeeId": "1003",
@@ -1833,7 +1631,8 @@ export const schedule = [
     "department": "Histoloji ve Embriyoloji",
     "lecturer": "Meral Koyutürk",
     "type": "course",
-    "id": "1003-2027-02-17-201"
+    "isPanel": false,
+    "id": "1003-2027-02-17-159"
   },
   {
     "committeeId": "1003",
@@ -1842,7 +1641,8 @@ export const schedule = [
     "department": "Tıbbi Biyoloji",
     "lecturer": "Halide Sema Bolkent",
     "type": "course",
-    "id": "1003-2027-02-17-202"
+    "isPanel": false,
+    "id": "1003-2027-02-17-160"
   },
   {
     "committeeId": "1003",
@@ -1851,7 +1651,8 @@ export const schedule = [
     "department": "Tıbbi Biyoloji",
     "lecturer": "Ahmet Özaydın",
     "type": "course",
-    "id": "1003-2027-02-17-203"
+    "isPanel": false,
+    "id": "1003-2027-02-17-161"
   },
   {
     "committeeId": "1003",
@@ -1860,16 +1661,8 @@ export const schedule = [
     "department": "Tıbbi Biyoloji",
     "lecturer": "Ahmet Özaydın",
     "type": "course",
-    "id": "1003-2027-02-17-204"
-  },
-  {
-    "committeeId": "1003",
-    "date": "2027-02-17",
-    "topic": "İletişim Becerileri",
-    "department": "Seçmeli Ders",
-    "lecturer": "Ramazan Arslan",
-    "type": "course",
-    "id": "1003-2027-02-17-205"
+    "isPanel": false,
+    "id": "1003-2027-02-17-162"
   },
   {
     "committeeId": "1003",
@@ -1878,7 +1671,8 @@ export const schedule = [
     "department": "Tıbbi Biyokimya",
     "lecturer": "Hakan Ekmekçi",
     "type": "course",
-    "id": "1003-2027-02-18-206"
+    "isPanel": false,
+    "id": "1003-2027-02-18-163"
   },
   {
     "committeeId": "1003",
@@ -1887,7 +1681,8 @@ export const schedule = [
     "department": "Tıbbi Biyokimya",
     "lecturer": "Hakan Ekmekçi",
     "type": "course",
-    "id": "1003-2027-02-18-207"
+    "isPanel": false,
+    "id": "1003-2027-02-18-164"
   },
   {
     "committeeId": "1003",
@@ -1896,7 +1691,8 @@ export const schedule = [
     "department": "Histoloji ve Embriyoloji",
     "lecturer": "Meral Koyutürk",
     "type": "course",
-    "id": "1003-2027-02-18-208"
+    "isPanel": false,
+    "id": "1003-2027-02-18-165"
   },
   {
     "committeeId": "1003",
@@ -1905,34 +1701,8 @@ export const schedule = [
     "department": "Histoloji ve Embriyoloji",
     "lecturer": "Meral Koyutürk",
     "type": "course",
-    "id": "1003-2027-02-18-209"
-  },
-  {
-    "committeeId": "1003",
-    "date": "2027-02-18",
-    "topic": "Yapay Zekâ",
-    "department": "Seçmeli Ders",
-    "lecturer": "Ahmet Baş",
-    "type": "course",
-    "id": "1003-2027-02-18-210"
-  },
-  {
-    "committeeId": "1003",
-    "date": "2027-02-19",
-    "topic": "Atatürk İlkeleri ve İnkılap Tarihi II",
-    "department": "Ortak Dersler",
-    "lecturer": "",
-    "type": "course",
-    "id": "1003-2027-02-19-211"
-  },
-  {
-    "committeeId": "1003",
-    "date": "2027-02-19",
-    "topic": "Türk Dili ve Edebiyatı II",
-    "department": "Ortak Dersler",
-    "lecturer": "",
-    "type": "course",
-    "id": "1003-2027-02-19-212"
+    "isPanel": false,
+    "id": "1003-2027-02-18-166"
   },
   {
     "committeeId": "1003",
@@ -1941,7 +1711,8 @@ export const schedule = [
     "department": "Tıbbi Biyoloji",
     "lecturer": "Turgut Ulutin",
     "type": "course",
-    "id": "1003-2027-02-22-213"
+    "isPanel": false,
+    "id": "1003-2027-02-22-167"
   },
   {
     "committeeId": "1003",
@@ -1950,7 +1721,8 @@ export const schedule = [
     "department": "Histoloji ve Embriyoloji",
     "lecturer": "Meral Koyutürk",
     "type": "course",
-    "id": "1003-2027-02-22-214"
+    "isPanel": false,
+    "id": "1003-2027-02-22-168"
   },
   {
     "committeeId": "1003",
@@ -1959,7 +1731,8 @@ export const schedule = [
     "department": "Tıbbi Biyoloji",
     "lecturer": "Ayhan Deviren",
     "type": "course",
-    "id": "1003-2027-02-22-215"
+    "isPanel": false,
+    "id": "1003-2027-02-22-169"
   },
   {
     "committeeId": "1003",
@@ -1968,7 +1741,8 @@ export const schedule = [
     "department": "Biyofizik",
     "lecturer": "Alev Meltem Ercan",
     "type": "course",
-    "id": "1003-2027-02-22-216"
+    "isPanel": false,
+    "id": "1003-2027-02-22-170"
   },
   {
     "committeeId": "1003",
@@ -1977,7 +1751,8 @@ export const schedule = [
     "department": "Tıbbi Biyoloji",
     "lecturer": "Mehmet Güven",
     "type": "course",
-    "id": "1003-2027-02-23-217"
+    "isPanel": false,
+    "id": "1003-2027-02-23-171"
   },
   {
     "committeeId": "1003",
@@ -1986,7 +1761,8 @@ export const schedule = [
     "department": "Tıbbi Biyoloji",
     "lecturer": "Mehmet Güven",
     "type": "course",
-    "id": "1003-2027-02-23-218"
+    "isPanel": false,
+    "id": "1003-2027-02-23-172"
   },
   {
     "committeeId": "1003",
@@ -1995,7 +1771,8 @@ export const schedule = [
     "department": "Fizyoloji",
     "lecturer": "Sibel Akyol",
     "type": "course",
-    "id": "1003-2027-02-23-219"
+    "isPanel": false,
+    "id": "1003-2027-02-23-173"
   },
   {
     "committeeId": "1003",
@@ -2004,16 +1781,8 @@ export const schedule = [
     "department": "Fizyoloji",
     "lecturer": "Sibel Akyol",
     "type": "course",
-    "id": "1003-2027-02-23-220"
-  },
-  {
-    "committeeId": "1003",
-    "date": "2027-02-23",
-    "topic": "Güzel Sanatlar II",
-    "department": "Ortak Dersler",
-    "lecturer": "",
-    "type": "course",
-    "id": "1003-2027-02-23-221"
+    "isPanel": false,
+    "id": "1003-2027-02-23-174"
   },
   {
     "committeeId": "1003",
@@ -2022,7 +1791,8 @@ export const schedule = [
     "department": "Fizyoloji",
     "lecturer": "Sibel Akyol",
     "type": "course",
-    "id": "1003-2027-02-24-222"
+    "isPanel": false,
+    "id": "1003-2027-02-24-175"
   },
   {
     "committeeId": "1003",
@@ -2031,7 +1801,8 @@ export const schedule = [
     "department": "Fizyoloji",
     "lecturer": "Sibel Akyol",
     "type": "course",
-    "id": "1003-2027-02-24-223"
+    "isPanel": false,
+    "id": "1003-2027-02-24-176"
   },
   {
     "committeeId": "1003",
@@ -2040,7 +1811,8 @@ export const schedule = [
     "department": "Histoloji ve Embriyoloji",
     "lecturer": "Gamze Tanrıverdi",
     "type": "course",
-    "id": "1003-2027-02-24-224"
+    "isPanel": false,
+    "id": "1003-2027-02-24-177"
   },
   {
     "committeeId": "1003",
@@ -2049,16 +1821,8 @@ export const schedule = [
     "department": "Histoloji ve Embriyoloji",
     "lecturer": "Gamze Tanrıverdi",
     "type": "course",
-    "id": "1003-2027-02-24-225"
-  },
-  {
-    "committeeId": "1003",
-    "date": "2027-02-24",
-    "topic": "İletişim Becerileri",
-    "department": "Seçmeli Ders",
-    "lecturer": "Ramazan Arslan",
-    "type": "course",
-    "id": "1003-2027-02-24-226"
+    "isPanel": false,
+    "id": "1003-2027-02-24-178"
   },
   {
     "committeeId": "1003",
@@ -2067,7 +1831,8 @@ export const schedule = [
     "department": "Fizyoloji",
     "lecturer": "Sibel Akyol",
     "type": "course",
-    "id": "1003-2027-02-25-227"
+    "isPanel": false,
+    "id": "1003-2027-02-25-179"
   },
   {
     "committeeId": "1003",
@@ -2076,7 +1841,8 @@ export const schedule = [
     "department": "Fizyoloji",
     "lecturer": "Sibel Akyol",
     "type": "course",
-    "id": "1003-2027-02-25-228"
+    "isPanel": false,
+    "id": "1003-2027-02-25-180"
   },
   {
     "committeeId": "1003",
@@ -2085,7 +1851,8 @@ export const schedule = [
     "department": "Tıbbi Biyoloji",
     "lecturer": "Yelda Tarkan Argüden",
     "type": "course",
-    "id": "1003-2027-02-25-229"
+    "isPanel": false,
+    "id": "1003-2027-02-25-181"
   },
   {
     "committeeId": "1003",
@@ -2094,34 +1861,8 @@ export const schedule = [
     "department": "Fizyoloji",
     "lecturer": "Aykut Oruç",
     "type": "course",
-    "id": "1003-2027-02-25-230"
-  },
-  {
-    "committeeId": "1003",
-    "date": "2027-02-25",
-    "topic": "Yapay Zekâ",
-    "department": "Seçmeli Ders",
-    "lecturer": "Ahmet Baş",
-    "type": "course",
-    "id": "1003-2027-02-25-231"
-  },
-  {
-    "committeeId": "1003",
-    "date": "2027-02-26",
-    "topic": "Atatürk İlkeleri ve İnkılap Tarihi II",
-    "department": "Ortak Dersler",
-    "lecturer": "",
-    "type": "course",
-    "id": "1003-2027-02-26-232"
-  },
-  {
-    "committeeId": "1003",
-    "date": "2027-02-26",
-    "topic": "Türk Dili ve Edebiyatı II",
-    "department": "Ortak Dersler",
-    "lecturer": "",
-    "type": "course",
-    "id": "1003-2027-02-26-233"
+    "isPanel": false,
+    "id": "1003-2027-02-25-182"
   },
   {
     "committeeId": "1003",
@@ -2130,7 +1871,8 @@ export const schedule = [
     "department": "Fizyoloji",
     "lecturer": "Aykut Oruç",
     "type": "course",
-    "id": "1003-2027-03-01-234"
+    "isPanel": false,
+    "id": "1003-2027-03-01-183"
   },
   {
     "committeeId": "1003",
@@ -2139,7 +1881,8 @@ export const schedule = [
     "department": "Fizyoloji",
     "lecturer": "Aykut Oruç",
     "type": "course",
-    "id": "1003-2027-03-01-235"
+    "isPanel": false,
+    "id": "1003-2027-03-01-184"
   },
   {
     "committeeId": "1003",
@@ -2148,7 +1891,8 @@ export const schedule = [
     "department": "Histoloji ve Embriyoloji",
     "lecturer": "Gamze Tanrıverdi",
     "type": "course",
-    "id": "1003-2027-03-01-236"
+    "isPanel": false,
+    "id": "1003-2027-03-01-185"
   },
   {
     "committeeId": "1003",
@@ -2157,7 +1901,8 @@ export const schedule = [
     "department": "Histoloji ve Embriyoloji",
     "lecturer": "Gamze Tanrıverdi",
     "type": "course",
-    "id": "1003-2027-03-01-237"
+    "isPanel": false,
+    "id": "1003-2027-03-01-186"
   },
   {
     "committeeId": "1003",
@@ -2166,7 +1911,8 @@ export const schedule = [
     "department": "Histoloji ve Embriyoloji",
     "lecturer": "Gamze Tanrıverdi",
     "type": "course",
-    "id": "1003-2027-03-02-238"
+    "isPanel": false,
+    "id": "1003-2027-03-02-187"
   },
   {
     "committeeId": "1003",
@@ -2175,7 +1921,8 @@ export const schedule = [
     "department": "Histoloji ve Embriyoloji",
     "lecturer": "Gamze Tanrıverdi",
     "type": "course",
-    "id": "1003-2027-03-02-239"
+    "isPanel": false,
+    "id": "1003-2027-03-02-188"
   },
   {
     "committeeId": "1003",
@@ -2184,7 +1931,8 @@ export const schedule = [
     "department": "Biyofizik",
     "lecturer": "Alev Meltem Ercan",
     "type": "course",
-    "id": "1003-2027-03-02-240"
+    "isPanel": false,
+    "id": "1003-2027-03-02-189"
   },
   {
     "committeeId": "1003",
@@ -2193,16 +1941,8 @@ export const schedule = [
     "department": "Biyofizik",
     "lecturer": "Alev Meltem Ercan",
     "type": "course",
-    "id": "1003-2027-03-02-241"
-  },
-  {
-    "committeeId": "1003",
-    "date": "2027-03-02",
-    "topic": "Güzel Sanatlar II",
-    "department": "Ortak Dersler",
-    "lecturer": "",
-    "type": "course",
-    "id": "1003-2027-03-02-242"
+    "isPanel": false,
+    "id": "1003-2027-03-02-190"
   },
   {
     "committeeId": "1003",
@@ -2211,7 +1951,8 @@ export const schedule = [
     "department": "Histoloji ve Embriyoloji",
     "lecturer": "Gamze Tanrıverdi",
     "type": "course",
-    "id": "1003-2027-03-03-243"
+    "isPanel": false,
+    "id": "1003-2027-03-03-191"
   },
   {
     "committeeId": "1003",
@@ -2220,7 +1961,8 @@ export const schedule = [
     "department": "Histoloji ve Embriyoloji",
     "lecturer": "Gamze Tanrıverdi",
     "type": "course",
-    "id": "1003-2027-03-03-244"
+    "isPanel": false,
+    "id": "1003-2027-03-03-192"
   },
   {
     "committeeId": "1003",
@@ -2229,7 +1971,8 @@ export const schedule = [
     "department": "Fizyoloji",
     "lecturer": "Aykut Oruç",
     "type": "course",
-    "id": "1003-2027-03-03-245"
+    "isPanel": false,
+    "id": "1003-2027-03-03-193"
   },
   {
     "committeeId": "1003",
@@ -2238,16 +1981,8 @@ export const schedule = [
     "department": "Fizyoloji",
     "lecturer": "Aykut Oruç",
     "type": "course",
-    "id": "1003-2027-03-03-246"
-  },
-  {
-    "committeeId": "1003",
-    "date": "2027-03-03",
-    "topic": "İletişim Becerileri",
-    "department": "Seçmeli Ders",
-    "lecturer": "Ramazan Arslan",
-    "type": "course",
-    "id": "1003-2027-03-03-247"
+    "isPanel": false,
+    "id": "1003-2027-03-03-194"
   },
   {
     "committeeId": "1003",
@@ -2256,7 +1991,8 @@ export const schedule = [
     "department": "Tıbbi Biyokimya",
     "lecturer": "Ahmet Ata Alturfan",
     "type": "course",
-    "id": "1003-2027-03-04-248"
+    "isPanel": false,
+    "id": "1003-2027-03-04-195"
   },
   {
     "committeeId": "1003",
@@ -2265,7 +2001,8 @@ export const schedule = [
     "department": "Tıbbi Biyoloji",
     "lecturer": "Ayşe Çırakoğlu",
     "type": "course",
-    "id": "1003-2027-03-04-249"
+    "isPanel": false,
+    "id": "1003-2027-03-04-196"
   },
   {
     "committeeId": "1003",
@@ -2274,7 +2011,8 @@ export const schedule = [
     "department": "Histoloji ve Embriyoloji",
     "lecturer": "Meral Koyutürk",
     "type": "course",
-    "id": "1003-2027-03-04-250"
+    "isPanel": false,
+    "id": "1003-2027-03-04-197"
   },
   {
     "committeeId": "1003",
@@ -2283,34 +2021,8 @@ export const schedule = [
     "department": "Histoloji ve Embriyoloji",
     "lecturer": "Meral Koyutürk",
     "type": "course",
-    "id": "1003-2027-03-04-251"
-  },
-  {
-    "committeeId": "1003",
-    "date": "2027-03-04",
-    "topic": "Yapay Zekâ",
-    "department": "Seçmeli Ders",
-    "lecturer": "Ahmet Baş",
-    "type": "course",
-    "id": "1003-2027-03-04-252"
-  },
-  {
-    "committeeId": "1003",
-    "date": "2027-03-05",
-    "topic": "Atatürk İlkeleri ve İnkılap Tarihi II",
-    "department": "Ortak Dersler",
-    "lecturer": "",
-    "type": "course",
-    "id": "1003-2027-03-05-253"
-  },
-  {
-    "committeeId": "1003",
-    "date": "2027-03-05",
-    "topic": "Türk Dili ve Edebiyatı II",
-    "department": "Ortak Dersler",
-    "lecturer": "",
-    "type": "course",
-    "id": "1003-2027-03-05-254"
+    "isPanel": false,
+    "id": "1003-2027-03-04-198"
   },
   {
     "committeeId": "1003",
@@ -2319,7 +2031,8 @@ export const schedule = [
     "department": "",
     "lecturer": "",
     "type": "holiday",
-    "id": "1003-2027-03-08-255"
+    "isPanel": false,
+    "id": "1003-2027-03-08-199"
   },
   {
     "committeeId": "1003",
@@ -2328,7 +2041,8 @@ export const schedule = [
     "department": "",
     "lecturer": "",
     "type": "holiday",
-    "id": "1003-2027-03-09-256"
+    "isPanel": false,
+    "id": "1003-2027-03-09-200"
   },
   {
     "committeeId": "1003",
@@ -2337,7 +2051,8 @@ export const schedule = [
     "department": "",
     "lecturer": "",
     "type": "holiday",
-    "id": "1003-2027-03-10-257"
+    "isPanel": false,
+    "id": "1003-2027-03-10-201"
   },
   {
     "committeeId": "1003",
@@ -2346,7 +2061,8 @@ export const schedule = [
     "department": "",
     "lecturer": "",
     "type": "holiday",
-    "id": "1003-2027-03-11-258"
+    "isPanel": false,
+    "id": "1003-2027-03-11-202"
   },
   {
     "committeeId": "1003",
@@ -2355,7 +2071,8 @@ export const schedule = [
     "department": "",
     "lecturer": "",
     "type": "holiday",
-    "id": "1003-2027-03-12-259"
+    "isPanel": false,
+    "id": "1003-2027-03-12-203"
   },
   {
     "committeeId": "1003",
@@ -2364,7 +2081,8 @@ export const schedule = [
     "department": "",
     "lecturer": "",
     "type": "study",
-    "id": "1003-2027-03-15-260"
+    "isPanel": false,
+    "id": "1003-2027-03-15-204"
   },
   {
     "committeeId": "1003",
@@ -2373,7 +2091,8 @@ export const schedule = [
     "department": "Tıbbi Biyoloji",
     "lecturer": "Ayhan Deviren",
     "type": "course",
-    "id": "1003-2027-03-16-261"
+    "isPanel": false,
+    "id": "1003-2027-03-16-205"
   },
   {
     "committeeId": "1003",
@@ -2382,7 +2101,8 @@ export const schedule = [
     "department": "Tıbbi Biyoloji",
     "lecturer": "Ayşe Çırakoğlu",
     "type": "course",
-    "id": "1003-2027-03-16-262"
+    "isPanel": false,
+    "id": "1003-2027-03-16-206"
   },
   {
     "committeeId": "1003",
@@ -2391,7 +2111,8 @@ export const schedule = [
     "department": "Histoloji ve Embriyoloji",
     "lecturer": "Meral Koyutürk",
     "type": "course",
-    "id": "1003-2027-03-16-263"
+    "isPanel": false,
+    "id": "1003-2027-03-16-207"
   },
   {
     "committeeId": "1003",
@@ -2400,16 +2121,8 @@ export const schedule = [
     "department": "Fizyoloji",
     "lecturer": "Aykut Oruç",
     "type": "course",
-    "id": "1003-2027-03-16-264"
-  },
-  {
-    "committeeId": "1003",
-    "date": "2027-03-16",
-    "topic": "Güzel Sanatlar II",
-    "department": "Ortak Dersler",
-    "lecturer": "",
-    "type": "course",
-    "id": "1003-2027-03-16-265"
+    "isPanel": false,
+    "id": "1003-2027-03-16-208"
   },
   {
     "committeeId": "1003",
@@ -2418,7 +2131,8 @@ export const schedule = [
     "department": "Tıbbi Biyoloji",
     "lecturer": "Ayhan Deviren",
     "type": "course",
-    "id": "1003-2027-03-17-266"
+    "isPanel": false,
+    "id": "1003-2027-03-17-209"
   },
   {
     "committeeId": "1003",
@@ -2427,7 +2141,8 @@ export const schedule = [
     "department": "Tıbbi Biyoloji",
     "lecturer": "Ayhan Deviren",
     "type": "course",
-    "id": "1003-2027-03-17-267"
+    "isPanel": false,
+    "id": "1003-2027-03-17-210"
   },
   {
     "committeeId": "1003",
@@ -2436,7 +2151,8 @@ export const schedule = [
     "department": "Histoloji ve Embriyoloji",
     "lecturer": "Meral Koyutürk",
     "type": "course",
-    "id": "1003-2027-03-17-268"
+    "isPanel": false,
+    "id": "1003-2027-03-17-211"
   },
   {
     "committeeId": "1003",
@@ -2445,16 +2161,8 @@ export const schedule = [
     "department": "Histoloji ve Embriyoloji",
     "lecturer": "Meral Koyutürk",
     "type": "course",
-    "id": "1003-2027-03-17-269"
-  },
-  {
-    "committeeId": "1003",
-    "date": "2027-03-17",
-    "topic": "İletişim Becerileri",
-    "department": "Seçmeli Ders",
-    "lecturer": "Ramazan Arslan",
-    "type": "course",
-    "id": "1003-2027-03-17-270"
+    "isPanel": false,
+    "id": "1003-2027-03-17-212"
   },
   {
     "committeeId": "1003",
@@ -2463,7 +2171,8 @@ export const schedule = [
     "department": "Tıbbi Biyoloji",
     "lecturer": "Ayhan Deviren",
     "type": "course",
-    "id": "1003-2027-03-18-271"
+    "isPanel": false,
+    "id": "1003-2027-03-18-213"
   },
   {
     "committeeId": "1003",
@@ -2472,7 +2181,8 @@ export const schedule = [
     "department": "Tıbbi Biyoloji",
     "lecturer": "Ayhan Deviren",
     "type": "course",
-    "id": "1003-2027-03-18-272"
+    "isPanel": false,
+    "id": "1003-2027-03-18-214"
   },
   {
     "committeeId": "1003",
@@ -2481,7 +2191,8 @@ export const schedule = [
     "department": "Biyofizik",
     "lecturer": "Ebru Hacıosmanoğlu Aldoğan",
     "type": "course",
-    "id": "1003-2027-03-18-273"
+    "isPanel": false,
+    "id": "1003-2027-03-18-215"
   },
   {
     "committeeId": "1003",
@@ -2490,34 +2201,8 @@ export const schedule = [
     "department": "Biyofizik",
     "lecturer": "Ebru Hacıosmanoğlu Aldoğan",
     "type": "course",
-    "id": "1003-2027-03-18-274"
-  },
-  {
-    "committeeId": "1003",
-    "date": "2027-03-18",
-    "topic": "Yapay Zekâ",
-    "department": "Seçmeli Ders",
-    "lecturer": "Ahmet Baş",
-    "type": "course",
-    "id": "1003-2027-03-18-275"
-  },
-  {
-    "committeeId": "1003",
-    "date": "2027-03-19",
-    "topic": "Atatürk İlkeleri ve İnkılap Tarihi II",
-    "department": "Ortak Dersler",
-    "lecturer": "",
-    "type": "course",
-    "id": "1003-2027-03-19-276"
-  },
-  {
-    "committeeId": "1003",
-    "date": "2027-03-19",
-    "topic": "Türk Dili ve Edebiyatı II",
-    "department": "Ortak Dersler",
-    "lecturer": "",
-    "type": "course",
-    "id": "1003-2027-03-19-277"
+    "isPanel": false,
+    "id": "1003-2027-03-18-216"
   },
   {
     "committeeId": "1003",
@@ -2526,7 +2211,8 @@ export const schedule = [
     "department": "",
     "lecturer": "",
     "type": "exam",
-    "id": "1003-2027-03-22-278"
+    "isPanel": false,
+    "id": "1003-2027-03-22-217"
   },
   {
     "committeeId": "1003",
@@ -2535,7 +2221,8 @@ export const schedule = [
     "department": "Histoloji ve Embriyoloji",
     "lecturer": "Gamze Tanrıverdi",
     "type": "course",
-    "id": "1003-2027-03-23-279"
+    "isPanel": false,
+    "id": "1003-2027-03-23-218"
   },
   {
     "committeeId": "1003",
@@ -2544,7 +2231,8 @@ export const schedule = [
     "department": "Histoloji ve Embriyoloji",
     "lecturer": "Gamze Tanrıverdi",
     "type": "course",
-    "id": "1003-2027-03-23-280"
+    "isPanel": false,
+    "id": "1003-2027-03-23-219"
   },
   {
     "committeeId": "1003",
@@ -2553,7 +2241,8 @@ export const schedule = [
     "department": "Tıbbi Biyoloji",
     "lecturer": "Ayhan Deviren",
     "type": "course",
-    "id": "1003-2027-03-23-281"
+    "isPanel": false,
+    "id": "1003-2027-03-23-220"
   },
   {
     "committeeId": "1003",
@@ -2562,16 +2251,8 @@ export const schedule = [
     "department": "Tıbbi Biyoloji",
     "lecturer": "Yelda Tarkan Argüden",
     "type": "course",
-    "id": "1003-2027-03-23-282"
-  },
-  {
-    "committeeId": "1003",
-    "date": "2027-03-23",
-    "topic": "Güzel Sanatlar II",
-    "department": "Ortak Dersler",
-    "lecturer": "",
-    "type": "course",
-    "id": "1003-2027-03-23-283"
+    "isPanel": false,
+    "id": "1003-2027-03-23-221"
   },
   {
     "committeeId": "1003",
@@ -2580,7 +2261,8 @@ export const schedule = [
     "department": "Biyofizik",
     "lecturer": "Ebru Hacıosmanoğlu Aldoğan",
     "type": "course",
-    "id": "1003-2027-03-24-284"
+    "isPanel": false,
+    "id": "1003-2027-03-24-222"
   },
   {
     "committeeId": "1003",
@@ -2589,7 +2271,8 @@ export const schedule = [
     "department": "Tıbbi Biyoloji",
     "lecturer": "Ayhan Deviren",
     "type": "course",
-    "id": "1003-2027-03-24-285"
+    "isPanel": false,
+    "id": "1003-2027-03-24-223"
   },
   {
     "committeeId": "1003",
@@ -2598,7 +2281,8 @@ export const schedule = [
     "department": "Tıbbi Biyoloji",
     "lecturer": "Fatma Dağıstanlı",
     "type": "course",
-    "id": "1003-2027-03-24-286"
+    "isPanel": false,
+    "id": "1003-2027-03-24-224"
   },
   {
     "committeeId": "1003",
@@ -2607,16 +2291,8 @@ export const schedule = [
     "department": "Tıbbi Biyoloji",
     "lecturer": "Fatma Dağıstanlı",
     "type": "course",
-    "id": "1003-2027-03-24-287"
-  },
-  {
-    "committeeId": "1003",
-    "date": "2027-03-24",
-    "topic": "İletişim Becerileri",
-    "department": "Seçmeli Ders",
-    "lecturer": "Ramazan Arslan",
-    "type": "course",
-    "id": "1003-2027-03-24-288"
+    "isPanel": false,
+    "id": "1003-2027-03-24-225"
   },
   {
     "committeeId": "1003",
@@ -2625,7 +2301,8 @@ export const schedule = [
     "department": "Biyofizik",
     "lecturer": "Ebru Hacıosmanoğlu Aldoğan",
     "type": "course",
-    "id": "1003-2027-03-25-289"
+    "isPanel": false,
+    "id": "1003-2027-03-25-226"
   },
   {
     "committeeId": "1003",
@@ -2634,7 +2311,8 @@ export const schedule = [
     "department": "Biyofizik",
     "lecturer": "Ebru Hacıosmanoğlu Aldoğan",
     "type": "course",
-    "id": "1003-2027-03-25-290"
+    "isPanel": false,
+    "id": "1003-2027-03-25-227"
   },
   {
     "committeeId": "1003",
@@ -2643,7 +2321,8 @@ export const schedule = [
     "department": "Histoloji ve Embriyoloji",
     "lecturer": "Gamze Tanrıverdi",
     "type": "course",
-    "id": "1003-2027-03-25-291"
+    "isPanel": false,
+    "id": "1003-2027-03-25-228"
   },
   {
     "committeeId": "1003",
@@ -2652,34 +2331,8 @@ export const schedule = [
     "department": "Histoloji ve Embriyoloji",
     "lecturer": "Gamze Tanrıverdi",
     "type": "course",
-    "id": "1003-2027-03-25-292"
-  },
-  {
-    "committeeId": "1003",
-    "date": "2027-03-25",
-    "topic": "Yapay Zekâ",
-    "department": "Seçmeli Ders",
-    "lecturer": "Ahmet Baş",
-    "type": "course",
-    "id": "1003-2027-03-25-293"
-  },
-  {
-    "committeeId": "1003",
-    "date": "2027-03-26",
-    "topic": "Atatürk İlkeleri ve İnkılap Tarihi II",
-    "department": "Ortak Dersler",
-    "lecturer": "",
-    "type": "course",
-    "id": "1003-2027-03-26-294"
-  },
-  {
-    "committeeId": "1003",
-    "date": "2027-03-26",
-    "topic": "Türk Dili ve Edebiyatı II",
-    "department": "Ortak Dersler",
-    "lecturer": "",
-    "type": "course",
-    "id": "1003-2027-03-26-295"
+    "isPanel": false,
+    "id": "1003-2027-03-25-229"
   },
   {
     "committeeId": "1003",
@@ -2688,7 +2341,8 @@ export const schedule = [
     "department": "Histoloji ve Embriyoloji",
     "lecturer": "Meral Koyutürk",
     "type": "course",
-    "id": "1003-2027-03-29-296"
+    "isPanel": false,
+    "id": "1003-2027-03-29-230"
   },
   {
     "committeeId": "1003",
@@ -2697,7 +2351,8 @@ export const schedule = [
     "department": "Histoloji ve Embriyoloji",
     "lecturer": "Meral Koyutürk",
     "type": "course",
-    "id": "1003-2027-03-29-297"
+    "isPanel": false,
+    "id": "1003-2027-03-29-231"
   },
   {
     "committeeId": "1003",
@@ -2706,7 +2361,9 @@ export const schedule = [
     "department": "Göğüs Cerrahisi",
     "lecturer": "Akif Turna",
     "type": "course",
-    "id": "1003-2027-03-29-298"
+    "isPanel": true,
+    "panelGroup": "Göğüs Cerrahisi",
+    "id": "1003-2027-03-29-232"
   },
   {
     "committeeId": "1003",
@@ -2715,7 +2372,9 @@ export const schedule = [
     "department": "Göğüs Cerrahisi",
     "lecturer": "Akif Turna",
     "type": "course",
-    "id": "1003-2027-03-29-299"
+    "isPanel": true,
+    "panelGroup": "Göğüs Cerrahisi",
+    "id": "1003-2027-03-29-233"
   },
   {
     "committeeId": "1003",
@@ -2724,7 +2383,8 @@ export const schedule = [
     "department": "Histoloji ve Embriyoloji",
     "lecturer": "Meral Koyutürk",
     "type": "course",
-    "id": "1003-2027-03-30-300"
+    "isPanel": false,
+    "id": "1003-2027-03-30-234"
   },
   {
     "committeeId": "1003",
@@ -2733,7 +2393,8 @@ export const schedule = [
     "department": "Histoloji ve Embriyoloji",
     "lecturer": "Meral Koyutürk",
     "type": "course",
-    "id": "1003-2027-03-30-301"
+    "isPanel": false,
+    "id": "1003-2027-03-30-235"
   },
   {
     "committeeId": "1003",
@@ -2742,7 +2403,9 @@ export const schedule = [
     "department": "Üroloji",
     "lecturer": "Elif Altınay Kırlı",
     "type": "course",
-    "id": "1003-2027-03-30-302"
+    "isPanel": true,
+    "panelGroup": "Üroloji",
+    "id": "1003-2027-03-30-236"
   },
   {
     "committeeId": "1003",
@@ -2751,16 +2414,9 @@ export const schedule = [
     "department": "Biyoistatistik ve Tıp Bilişimi",
     "lecturer": "Abdulahad Bayraktar",
     "type": "course",
-    "id": "1003-2027-03-30-303"
-  },
-  {
-    "committeeId": "1003",
-    "date": "2027-03-30",
-    "topic": "Güzel Sanatlar II",
-    "department": "Ortak Dersler",
-    "lecturer": "",
-    "type": "course",
-    "id": "1003-2027-03-30-304"
+    "isPanel": true,
+    "panelGroup": "Biyoistatistik ve Tıp Bilişimi",
+    "id": "1003-2027-03-30-237"
   },
   {
     "committeeId": "1003",
@@ -2769,7 +2425,8 @@ export const schedule = [
     "department": "Tıbbi Biyoloji",
     "lecturer": "Ayşe Çırakoğlu",
     "type": "course",
-    "id": "1003-2027-03-31-305"
+    "isPanel": false,
+    "id": "1003-2027-03-31-238"
   },
   {
     "committeeId": "1003",
@@ -2778,7 +2435,8 @@ export const schedule = [
     "department": "Tıbbi Biyoloji",
     "lecturer": "Ayşe Nur Buyru",
     "type": "course",
-    "id": "1003-2027-03-31-306"
+    "isPanel": false,
+    "id": "1003-2027-03-31-239"
   },
   {
     "committeeId": "1003",
@@ -2787,7 +2445,9 @@ export const schedule = [
     "department": "Genel Cerrahi",
     "lecturer": "Pınar Kocael",
     "type": "course",
-    "id": "1003-2027-03-31-307"
+    "isPanel": true,
+    "panelGroup": "Genel Cerrahi",
+    "id": "1003-2027-03-31-240"
   },
   {
     "committeeId": "1003",
@@ -2796,16 +2456,9 @@ export const schedule = [
     "department": "Göğüs Cerrahisi",
     "lecturer": "Volkan Kara",
     "type": "course",
-    "id": "1003-2027-03-31-308"
-  },
-  {
-    "committeeId": "1003",
-    "date": "2027-03-31",
-    "topic": "İletişim Becerileri",
-    "department": "Seçmeli Ders",
-    "lecturer": "Ramazan Arslan",
-    "type": "course",
-    "id": "1003-2027-03-31-309"
+    "isPanel": true,
+    "panelGroup": "Göğüs Cerrahisi",
+    "id": "1003-2027-03-31-241"
   },
   {
     "committeeId": "1003",
@@ -2814,7 +2467,8 @@ export const schedule = [
     "department": "Histoloji ve Embriyoloji",
     "lecturer": "Meral Koyutürk",
     "type": "course",
-    "id": "1003-2027-04-01-310"
+    "isPanel": false,
+    "id": "1003-2027-04-01-242"
   },
   {
     "committeeId": "1003",
@@ -2823,7 +2477,8 @@ export const schedule = [
     "department": "Histoloji ve Embriyoloji",
     "lecturer": "Meral Koyutürk",
     "type": "course",
-    "id": "1003-2027-04-01-311"
+    "isPanel": false,
+    "id": "1003-2027-04-01-243"
   },
   {
     "committeeId": "1003",
@@ -2832,7 +2487,9 @@ export const schedule = [
     "department": "Nükleer Tıp",
     "lecturer": "Sertaç Asa",
     "type": "course",
-    "id": "1003-2027-04-01-312"
+    "isPanel": true,
+    "panelGroup": "Nükleer Tıp",
+    "id": "1003-2027-04-01-244"
   },
   {
     "committeeId": "1003",
@@ -2841,34 +2498,9 @@ export const schedule = [
     "department": "İç Hastalıkları",
     "lecturer": "Emre Eşkazan",
     "type": "course",
-    "id": "1003-2027-04-01-313"
-  },
-  {
-    "committeeId": "1003",
-    "date": "2027-04-01",
-    "topic": "Yapay Zekâ",
-    "department": "Seçmeli Ders",
-    "lecturer": "Ahmet Baş",
-    "type": "course",
-    "id": "1003-2027-04-01-314"
-  },
-  {
-    "committeeId": "1003",
-    "date": "2027-04-02",
-    "topic": "Atatürk İlkeleri ve İnkılap Tarihi II",
-    "department": "Ortak Dersler",
-    "lecturer": "",
-    "type": "course",
-    "id": "1003-2027-04-02-315"
-  },
-  {
-    "committeeId": "1003",
-    "date": "2027-04-02",
-    "topic": "Türk Dili ve Edebiyatı II",
-    "department": "Ortak Dersler",
-    "lecturer": "",
-    "type": "course",
-    "id": "1003-2027-04-02-316"
+    "isPanel": true,
+    "panelGroup": "İç Hastalıkları",
+    "id": "1003-2027-04-01-245"
   },
   {
     "committeeId": "1003",
@@ -2877,7 +2509,9 @@ export const schedule = [
     "department": "İç Hastalıkları",
     "lecturer": "Ahmet Murt",
     "type": "course",
-    "id": "1003-2027-04-05-317"
+    "isPanel": true,
+    "panelGroup": "İç Hastalıkları",
+    "id": "1003-2027-04-05-246"
   },
   {
     "committeeId": "1003",
@@ -2886,7 +2520,8 @@ export const schedule = [
     "department": "Tıbbi Biyokimya",
     "lecturer": "Pınar Atukeren",
     "type": "course",
-    "id": "1003-2027-04-05-318"
+    "isPanel": false,
+    "id": "1003-2027-04-05-247"
   },
   {
     "committeeId": "1003",
@@ -2895,7 +2530,9 @@ export const schedule = [
     "department": "Tıbbi Biyoloji",
     "lecturer": "Onur Baykara",
     "type": "course",
-    "id": "1003-2027-04-05-319"
+    "isPanel": true,
+    "panelGroup": "Tıbbi Biyoloji",
+    "id": "1003-2027-04-05-248"
   },
   {
     "committeeId": "1003",
@@ -2904,7 +2541,8 @@ export const schedule = [
     "department": "Tıbbi Biyoloji",
     "lecturer": "Onur Baykara",
     "type": "course",
-    "id": "1003-2027-04-05-320"
+    "isPanel": false,
+    "id": "1003-2027-04-05-249"
   },
   {
     "committeeId": "1003",
@@ -2913,7 +2551,9 @@ export const schedule = [
     "department": "Pediatri",
     "lecturer": "Çiğdem Aktuğlu Zeybek",
     "type": "course",
-    "id": "1003-2027-04-06-321"
+    "isPanel": true,
+    "panelGroup": "Pediatri",
+    "id": "1003-2027-04-06-250"
   },
   {
     "committeeId": "1003",
@@ -2922,7 +2562,9 @@ export const schedule = [
     "department": "Tıp Eğitimi",
     "lecturer": "Özlem Serpil Çakmakkaya",
     "type": "course",
-    "id": "1003-2027-04-06-322"
+    "isPanel": true,
+    "panelGroup": "Tıp Eğitimi",
+    "id": "1003-2027-04-06-251"
   },
   {
     "committeeId": "1003",
@@ -2931,7 +2573,8 @@ export const schedule = [
     "department": "Histoloji ve Embriyoloji",
     "lecturer": "Meral Koyutürk",
     "type": "course",
-    "id": "1003-2027-04-06-323"
+    "isPanel": false,
+    "id": "1003-2027-04-06-252"
   },
   {
     "committeeId": "1003",
@@ -2940,16 +2583,8 @@ export const schedule = [
     "department": "Histoloji ve Embriyoloji",
     "lecturer": "Meral Koyutürk",
     "type": "course",
-    "id": "1003-2027-04-06-324"
-  },
-  {
-    "committeeId": "1003",
-    "date": "2027-04-06",
-    "topic": "Güzel Sanatlar II",
-    "department": "Ortak Dersler",
-    "lecturer": "",
-    "type": "course",
-    "id": "1003-2027-04-06-325"
+    "isPanel": false,
+    "id": "1003-2027-04-06-253"
   },
   {
     "committeeId": "1003",
@@ -2958,7 +2593,8 @@ export const schedule = [
     "department": "Fizyoloji",
     "lecturer": "Aykut Oruç",
     "type": "course",
-    "id": "1003-2027-04-07-326"
+    "isPanel": false,
+    "id": "1003-2027-04-07-254"
   },
   {
     "committeeId": "1003",
@@ -2967,25 +2603,20 @@ export const schedule = [
     "department": "Biyofizik",
     "lecturer": "Ebru Hacıosmanoğlu Aldoğan",
     "type": "course",
-    "id": "1003-2027-04-07-327"
+    "isPanel": false,
+    "id": "1003-2027-04-07-255"
   },
   {
     "committeeId": "1003",
     "date": "2027-04-07",
-    "topic": "BİLİMSEL PROJE PANELİ Moderatör: Ayşegül Batıoğlu Karaaltın — Konuşmacılar: Dildar Konukoğlu, Ahmet Baş, Nanoteknoloji Enstitüsüi",
+    "topic": "Bilimsel Proje Paneli",
     "department": "",
-    "lecturer": "",
+    "lecturer": "Moderatör: Ayşegül Batıoğlu Karaaltın",
     "type": "event",
-    "id": "1003-2027-04-07-328"
-  },
-  {
-    "committeeId": "1003",
-    "date": "2027-04-07",
-    "topic": "İletişim Becerileri",
-    "department": "Seçmeli Ders",
-    "lecturer": "Ramazan Arslan",
-    "type": "course",
-    "id": "1003-2027-04-07-329"
+    "isPanel": true,
+    "panelGroup": "Bilimsel Proje Paneli",
+    "details": "Konuşmacılar: Dildar Konukoğlu, Ahmet Baş, Nanoteknoloji Enstitüsü",
+    "id": "1003-2027-04-07-256"
   },
   {
     "committeeId": "1003",
@@ -2994,7 +2625,8 @@ export const schedule = [
     "department": "Fizyoloji",
     "lecturer": "Aykut Oruç",
     "type": "course",
-    "id": "1003-2027-04-08-330"
+    "isPanel": false,
+    "id": "1003-2027-04-08-257"
   },
   {
     "committeeId": "1003",
@@ -3003,34 +2635,8 @@ export const schedule = [
     "department": "Fizyoloji",
     "lecturer": "Aykut Oruç",
     "type": "course",
-    "id": "1003-2027-04-08-331"
-  },
-  {
-    "committeeId": "1003",
-    "date": "2027-04-08",
-    "topic": "Yapay Zekâ",
-    "department": "Seçmeli Ders",
-    "lecturer": "Ahmet Baş",
-    "type": "course",
-    "id": "1003-2027-04-08-332"
-  },
-  {
-    "committeeId": "1003",
-    "date": "2027-04-09",
-    "topic": "Atatürk İlkeleri ve İnkılap Tarihi II",
-    "department": "Ortak Dersler",
-    "lecturer": "",
-    "type": "course",
-    "id": "1003-2027-04-09-333"
-  },
-  {
-    "committeeId": "1003",
-    "date": "2027-04-09",
-    "topic": "Türk Dili ve Edebiyatı II",
-    "department": "Ortak Dersler",
-    "lecturer": "",
-    "type": "course",
-    "id": "1003-2027-04-09-334"
+    "isPanel": false,
+    "id": "1003-2027-04-08-258"
   },
   {
     "committeeId": "1003",
@@ -3039,7 +2645,8 @@ export const schedule = [
     "department": "",
     "lecturer": "",
     "type": "study",
-    "id": "1003-2027-04-12-335"
+    "isPanel": false,
+    "id": "1003-2027-04-12-259"
   },
   {
     "committeeId": "1003",
@@ -3048,16 +2655,8 @@ export const schedule = [
     "department": "",
     "lecturer": "",
     "type": "study",
-    "id": "1003-2027-04-13-336"
-  },
-  {
-    "committeeId": "1003",
-    "date": "2027-04-13",
-    "topic": "Güzel Sanatlar II",
-    "department": "Ortak Dersler",
-    "lecturer": "",
-    "type": "course",
-    "id": "1003-2027-04-13-337"
+    "isPanel": false,
+    "id": "1003-2027-04-13-260"
   },
   {
     "committeeId": "1003",
@@ -3066,16 +2665,8 @@ export const schedule = [
     "department": "",
     "lecturer": "",
     "type": "study",
-    "id": "1003-2027-04-14-338"
-  },
-  {
-    "committeeId": "1003",
-    "date": "2027-04-14",
-    "topic": "İletişim Becerileri",
-    "department": "Seçmeli Ders",
-    "lecturer": "Ramazan Arslan",
-    "type": "course",
-    "id": "1003-2027-04-14-339"
+    "isPanel": false,
+    "id": "1003-2027-04-14-261"
   },
   {
     "committeeId": "1003",
@@ -3084,34 +2675,8 @@ export const schedule = [
     "department": "",
     "lecturer": "",
     "type": "exam",
-    "id": "1003-2027-04-15-340"
-  },
-  {
-    "committeeId": "1003",
-    "date": "2027-04-15",
-    "topic": "Yapay Zekâ",
-    "department": "Seçmeli Ders",
-    "lecturer": "Ahmet Baş",
-    "type": "course",
-    "id": "1003-2027-04-15-341"
-  },
-  {
-    "committeeId": "1003",
-    "date": "2027-04-16",
-    "topic": "Atatürk İlkeleri ve İnkılap Tarihi II",
-    "department": "Ortak Dersler",
-    "lecturer": "",
-    "type": "course",
-    "id": "1003-2027-04-16-342"
-  },
-  {
-    "committeeId": "1003",
-    "date": "2027-04-16",
-    "topic": "Türk Dili ve Edebiyatı II",
-    "department": "Ortak Dersler",
-    "lecturer": "",
-    "type": "course",
-    "id": "1003-2027-04-16-343"
+    "isPanel": false,
+    "id": "1003-2027-04-15-262"
   },
   {
     "committeeId": "1004",
@@ -3120,7 +2685,8 @@ export const schedule = [
     "department": "Ders Kurulu",
     "lecturer": "",
     "type": "course",
-    "id": "1004-2027-04-19-344"
+    "isPanel": false,
+    "id": "1004-2027-04-19-263"
   },
   {
     "committeeId": "1004",
@@ -3129,7 +2695,8 @@ export const schedule = [
     "department": "Ruh Sağlığı ve Hastalıkları",
     "lecturer": "Cana Aksoy Poyraz",
     "type": "course",
-    "id": "1004-2027-04-19-345"
+    "isPanel": false,
+    "id": "1004-2027-04-19-264"
   },
   {
     "committeeId": "1004",
@@ -3138,7 +2705,8 @@ export const schedule = [
     "department": "Tıbbi Farmakoloji",
     "lecturer": "Sibel Özmen Özyazgan",
     "type": "course",
-    "id": "1004-2027-04-19-346"
+    "isPanel": false,
+    "id": "1004-2027-04-19-265"
   },
   {
     "committeeId": "1004",
@@ -3147,7 +2715,8 @@ export const schedule = [
     "department": "Tıbbi Farmakoloji",
     "lecturer": "Sibel Özmen Özyazgan",
     "type": "course",
-    "id": "1004-2027-04-19-347"
+    "isPanel": false,
+    "id": "1004-2027-04-19-266"
   },
   {
     "committeeId": "1004",
@@ -3156,7 +2725,8 @@ export const schedule = [
     "department": "Ruh Sağlığı ve Hastalıkları",
     "lecturer": "Muhammed Emin Boylu",
     "type": "course",
-    "id": "1004-2027-04-20-348"
+    "isPanel": false,
+    "id": "1004-2027-04-20-267"
   },
   {
     "committeeId": "1004",
@@ -3165,7 +2735,8 @@ export const schedule = [
     "department": "Tıbbi Patoloji",
     "lecturer": "Nuray Kepil",
     "type": "course",
-    "id": "1004-2027-04-20-349"
+    "isPanel": false,
+    "id": "1004-2027-04-20-268"
   },
   {
     "committeeId": "1004",
@@ -3174,16 +2745,8 @@ export const schedule = [
     "department": "Tıbbi Patoloji",
     "lecturer": "Nuray Kepil",
     "type": "course",
-    "id": "1004-2027-04-20-350"
-  },
-  {
-    "committeeId": "1004",
-    "date": "2027-04-20",
-    "topic": "Güzel Sanatlar II",
-    "department": "Ortak Dersler",
-    "lecturer": "",
-    "type": "course",
-    "id": "1004-2027-04-20-351"
+    "isPanel": false,
+    "id": "1004-2027-04-20-269"
   },
   {
     "committeeId": "1004",
@@ -3192,7 +2755,8 @@ export const schedule = [
     "department": "Tıbbi Patoloji",
     "lecturer": "Nuray Kepil",
     "type": "course",
-    "id": "1004-2027-04-21-352"
+    "isPanel": false,
+    "id": "1004-2027-04-21-270"
   },
   {
     "committeeId": "1004",
@@ -3201,7 +2765,8 @@ export const schedule = [
     "department": "Tıbbi Patoloji",
     "lecturer": "Nuray Kepil",
     "type": "course",
-    "id": "1004-2027-04-21-353"
+    "isPanel": false,
+    "id": "1004-2027-04-21-271"
   },
   {
     "committeeId": "1004",
@@ -3210,7 +2775,8 @@ export const schedule = [
     "department": "Tıbbi Farmakoloji",
     "lecturer": "Selim Gökdemir",
     "type": "course",
-    "id": "1004-2027-04-21-354"
+    "isPanel": false,
+    "id": "1004-2027-04-21-272"
   },
   {
     "committeeId": "1004",
@@ -3219,16 +2785,8 @@ export const schedule = [
     "department": "Tıbbi Farmakoloji",
     "lecturer": "Selim Gökdemir",
     "type": "course",
-    "id": "1004-2027-04-21-355"
-  },
-  {
-    "committeeId": "1004",
-    "date": "2027-04-21",
-    "topic": "İletişim Becerileri",
-    "department": "Seçmeli Ders",
-    "lecturer": "Ramazan Arslan",
-    "type": "course",
-    "id": "1004-2027-04-21-356"
+    "isPanel": false,
+    "id": "1004-2027-04-21-273"
   },
   {
     "committeeId": "1004",
@@ -3237,7 +2795,8 @@ export const schedule = [
     "department": "Ruh Sağlığı ve Hastalıkları",
     "lecturer": "Yasin Kavla",
     "type": "course",
-    "id": "1004-2027-04-22-357"
+    "isPanel": false,
+    "id": "1004-2027-04-22-274"
   },
   {
     "committeeId": "1004",
@@ -3246,7 +2805,8 @@ export const schedule = [
     "department": "Ruh Sağlığı ve Hastalıkları",
     "lecturer": "Yasin Kavla",
     "type": "course",
-    "id": "1004-2027-04-22-358"
+    "isPanel": false,
+    "id": "1004-2027-04-22-275"
   },
   {
     "committeeId": "1004",
@@ -3255,7 +2815,8 @@ export const schedule = [
     "department": "Tıbbi Patoloji",
     "lecturer": "Tülin Öztürk",
     "type": "course",
-    "id": "1004-2027-04-22-359"
+    "isPanel": false,
+    "id": "1004-2027-04-22-276"
   },
   {
     "committeeId": "1004",
@@ -3264,16 +2825,8 @@ export const schedule = [
     "department": "Tıbbi Patoloji",
     "lecturer": "Tülin Öztürk",
     "type": "course",
-    "id": "1004-2027-04-22-360"
-  },
-  {
-    "committeeId": "1004",
-    "date": "2027-04-22",
-    "topic": "Yapay Zekâ",
-    "department": "Seçmeli Ders",
-    "lecturer": "Ahmet Baş",
-    "type": "course",
-    "id": "1004-2027-04-22-361"
+    "isPanel": false,
+    "id": "1004-2027-04-22-277"
   },
   {
     "committeeId": "1004",
@@ -3282,7 +2835,8 @@ export const schedule = [
     "department": "",
     "lecturer": "",
     "type": "holiday",
-    "id": "1004-2027-04-23-362"
+    "isPanel": false,
+    "id": "1004-2027-04-23-278"
   },
   {
     "committeeId": "1004",
@@ -3291,7 +2845,8 @@ export const schedule = [
     "department": "Tıbbi Mikrobiyoloji",
     "lecturer": "Ömer Küçükbasmacı",
     "type": "course",
-    "id": "1004-2027-04-26-363"
+    "isPanel": false,
+    "id": "1004-2027-04-26-279"
   },
   {
     "committeeId": "1004",
@@ -3300,7 +2855,8 @@ export const schedule = [
     "department": "Tıbbi Mikrobiyoloji",
     "lecturer": "Erdal Polat",
     "type": "course",
-    "id": "1004-2027-04-26-364"
+    "isPanel": false,
+    "id": "1004-2027-04-26-280"
   },
   {
     "committeeId": "1004",
@@ -3309,7 +2865,8 @@ export const schedule = [
     "department": "Çocuk ve Ergen Ruh Sağlığı ve Hastalıkları",
     "lecturer": "Burak Doğangün",
     "type": "course",
-    "id": "1004-2027-04-26-365"
+    "isPanel": false,
+    "id": "1004-2027-04-26-281"
   },
   {
     "committeeId": "1004",
@@ -3318,7 +2875,8 @@ export const schedule = [
     "department": "Çocuk ve Ergen Ruh Sağlığı ve Hastalıkları",
     "lecturer": "Burak Doğangün",
     "type": "course",
-    "id": "1004-2027-04-26-366"
+    "isPanel": false,
+    "id": "1004-2027-04-26-282"
   },
   {
     "committeeId": "1004",
@@ -3327,7 +2885,8 @@ export const schedule = [
     "department": "Tıbbi Patoloji",
     "lecturer": "Nil Çomunoğlu",
     "type": "course",
-    "id": "1004-2027-04-27-367"
+    "isPanel": false,
+    "id": "1004-2027-04-27-283"
   },
   {
     "committeeId": "1004",
@@ -3336,7 +2895,8 @@ export const schedule = [
     "department": "Tıbbi Mikrobiyoloji",
     "lecturer": "Erdal Polat",
     "type": "course",
-    "id": "1004-2027-04-27-368"
+    "isPanel": false,
+    "id": "1004-2027-04-27-284"
   },
   {
     "committeeId": "1004",
@@ -3345,7 +2905,8 @@ export const schedule = [
     "department": "Tıbbi Farmakoloji",
     "lecturer": "Andleeb Bukhari",
     "type": "course",
-    "id": "1004-2027-04-27-369"
+    "isPanel": false,
+    "id": "1004-2027-04-27-285"
   },
   {
     "committeeId": "1004",
@@ -3354,16 +2915,8 @@ export const schedule = [
     "department": "Tıbbi Farmakoloji",
     "lecturer": "Andleeb Bukhari",
     "type": "course",
-    "id": "1004-2027-04-27-370"
-  },
-  {
-    "committeeId": "1004",
-    "date": "2027-04-27",
-    "topic": "Güzel Sanatlar II",
-    "department": "Ortak Dersler",
-    "lecturer": "",
-    "type": "course",
-    "id": "1004-2027-04-27-371"
+    "isPanel": false,
+    "id": "1004-2027-04-27-286"
   },
   {
     "committeeId": "1004",
@@ -3372,7 +2925,8 @@ export const schedule = [
     "department": "Anesteziyoloji ve Reanimasyon",
     "lecturer": "Eren Fatma Akçıl",
     "type": "course",
-    "id": "1004-2027-04-28-372"
+    "isPanel": false,
+    "id": "1004-2027-04-28-287"
   },
   {
     "committeeId": "1004",
@@ -3381,7 +2935,8 @@ export const schedule = [
     "department": "Tıbbi Patoloji",
     "lecturer": "Nuray Kepil",
     "type": "course",
-    "id": "1004-2027-04-28-373"
+    "isPanel": false,
+    "id": "1004-2027-04-28-288"
   },
   {
     "committeeId": "1004",
@@ -3390,7 +2945,8 @@ export const schedule = [
     "department": "Anesteziyoloji ve Reanimasyon",
     "lecturer": "Oğuzhan Kayhan",
     "type": "course",
-    "id": "1004-2027-04-28-374"
+    "isPanel": false,
+    "id": "1004-2027-04-28-289"
   },
   {
     "committeeId": "1004",
@@ -3399,16 +2955,8 @@ export const schedule = [
     "department": "Tıbbi Patoloji",
     "lecturer": "Tülin Öztürk",
     "type": "course",
-    "id": "1004-2027-04-28-375"
-  },
-  {
-    "committeeId": "1004",
-    "date": "2027-04-28",
-    "topic": "İletişim Becerileri",
-    "department": "Seçmeli Ders",
-    "lecturer": "Ramazan Arslan",
-    "type": "course",
-    "id": "1004-2027-04-28-376"
+    "isPanel": false,
+    "id": "1004-2027-04-28-290"
   },
   {
     "committeeId": "1004",
@@ -3417,7 +2965,8 @@ export const schedule = [
     "department": "Ruh Sağlığı ve Hastalıkları",
     "lecturer": "Mehmet Murat Kırpınar",
     "type": "course",
-    "id": "1004-2027-04-29-377"
+    "isPanel": false,
+    "id": "1004-2027-04-29-291"
   },
   {
     "committeeId": "1004",
@@ -3426,7 +2975,8 @@ export const schedule = [
     "department": "Ruh Sağlığı ve Hastalıkları",
     "lecturer": "Bayram Mert Savrun",
     "type": "course",
-    "id": "1004-2027-04-29-378"
+    "isPanel": false,
+    "id": "1004-2027-04-29-292"
   },
   {
     "committeeId": "1004",
@@ -3435,7 +2985,8 @@ export const schedule = [
     "department": "Tıbbi Farmakoloji",
     "lecturer": "Andleeb Bukhari",
     "type": "course",
-    "id": "1004-2027-04-29-379"
+    "isPanel": false,
+    "id": "1004-2027-04-29-293"
   },
   {
     "committeeId": "1004",
@@ -3444,43 +2995,8 @@ export const schedule = [
     "department": "Tıbbi Farmakoloji",
     "lecturer": "Andleeb Bukhari",
     "type": "course",
-    "id": "1004-2027-04-29-380"
-  },
-  {
-    "committeeId": "1004",
-    "date": "2027-04-29",
-    "topic": "Yapay Zekâ",
-    "department": "Seçmeli Ders",
-    "lecturer": "Ahmet Baş",
-    "type": "course",
-    "id": "1004-2027-04-29-381"
-  },
-  {
-    "committeeId": "1004",
-    "date": "2027-04-30",
-    "topic": "Atatürk İlkeleri ve İnkılap Tarihi II",
-    "department": "Ortak Dersler",
-    "lecturer": "",
-    "type": "course",
-    "id": "1004-2027-04-30-382"
-  },
-  {
-    "committeeId": "1004",
-    "date": "2027-04-30",
-    "topic": "Türk Dili ve Edebiyatı II",
-    "department": "Ortak Dersler",
-    "lecturer": "",
-    "type": "course",
-    "id": "1004-2027-04-30-383"
-  },
-  {
-    "committeeId": "1004",
-    "date": "2027-04-30",
-    "topic": "Yabancı Dil II",
-    "department": "Ortak Dersler",
-    "lecturer": "",
-    "type": "course",
-    "id": "1004-2027-04-30-384"
+    "isPanel": false,
+    "id": "1004-2027-04-29-294"
   },
   {
     "committeeId": "1004",
@@ -3489,7 +3005,8 @@ export const schedule = [
     "department": "Anesteziyoloji ve Reanimasyon",
     "lecturer": "Oğuzhan Kayhan",
     "type": "course",
-    "id": "1004-2027-05-03-385"
+    "isPanel": false,
+    "id": "1004-2027-05-03-295"
   },
   {
     "committeeId": "1004",
@@ -3498,7 +3015,8 @@ export const schedule = [
     "department": "Anesteziyoloji ve Reanimasyon",
     "lecturer": "Oğuzhan Kayhan",
     "type": "course",
-    "id": "1004-2027-05-03-386"
+    "isPanel": false,
+    "id": "1004-2027-05-03-296"
   },
   {
     "committeeId": "1004",
@@ -3507,7 +3025,8 @@ export const schedule = [
     "department": "Tıbbi Patoloji",
     "lecturer": "Nuray Kepil",
     "type": "course",
-    "id": "1004-2027-05-03-387"
+    "isPanel": false,
+    "id": "1004-2027-05-03-297"
   },
   {
     "committeeId": "1004",
@@ -3516,7 +3035,8 @@ export const schedule = [
     "department": "Tıbbi Patoloji",
     "lecturer": "Nuray Kepil",
     "type": "course",
-    "id": "1004-2027-05-03-388"
+    "isPanel": false,
+    "id": "1004-2027-05-03-298"
   },
   {
     "committeeId": "1004",
@@ -3525,7 +3045,8 @@ export const schedule = [
     "department": "Tıbbi Farmakoloji",
     "lecturer": "Andleeb Bukhari",
     "type": "course",
-    "id": "1004-2027-05-04-389"
+    "isPanel": false,
+    "id": "1004-2027-05-04-299"
   },
   {
     "committeeId": "1004",
@@ -3534,7 +3055,8 @@ export const schedule = [
     "department": "Tıbbi Farmakoloji",
     "lecturer": "Andleeb Bukhari",
     "type": "course",
-    "id": "1004-2027-05-04-390"
+    "isPanel": false,
+    "id": "1004-2027-05-04-300"
   },
   {
     "committeeId": "1004",
@@ -3543,7 +3065,8 @@ export const schedule = [
     "department": "Tıbbi Patoloji",
     "lecturer": "Tülin Öztürk",
     "type": "course",
-    "id": "1004-2027-05-04-391"
+    "isPanel": false,
+    "id": "1004-2027-05-04-301"
   },
   {
     "committeeId": "1004",
@@ -3552,16 +3075,8 @@ export const schedule = [
     "department": "Ruh Sağlığı ve Hastalıkları",
     "lecturer": "Nazife Gamze Usta Sağlam",
     "type": "course",
-    "id": "1004-2027-05-04-392"
-  },
-  {
-    "committeeId": "1004",
-    "date": "2027-05-04",
-    "topic": "Güzel Sanatlar II",
-    "department": "Ortak Dersler",
-    "lecturer": "",
-    "type": "course",
-    "id": "1004-2027-05-04-393"
+    "isPanel": false,
+    "id": "1004-2027-05-04-302"
   },
   {
     "committeeId": "1004",
@@ -3570,7 +3085,8 @@ export const schedule = [
     "department": "Çocuk ve Ergen Ruh Sağlığı ve Hastalıkları",
     "lecturer": "Muhammed Tayyib Kadak",
     "type": "course",
-    "id": "1004-2027-05-05-394"
+    "isPanel": false,
+    "id": "1004-2027-05-05-303"
   },
   {
     "committeeId": "1004",
@@ -3579,7 +3095,8 @@ export const schedule = [
     "department": "Ruh Sağlığı ve Hastalıkları",
     "lecturer": "Numan Konuk",
     "type": "course",
-    "id": "1004-2027-05-05-395"
+    "isPanel": false,
+    "id": "1004-2027-05-05-304"
   },
   {
     "committeeId": "1004",
@@ -3588,7 +3105,8 @@ export const schedule = [
     "department": "Tıbbi Patoloji",
     "lecturer": "Tülin Öztürk",
     "type": "course",
-    "id": "1004-2027-05-05-396"
+    "isPanel": false,
+    "id": "1004-2027-05-05-305"
   },
   {
     "committeeId": "1004",
@@ -3597,16 +3115,8 @@ export const schedule = [
     "department": "Tıbbi Patoloji",
     "lecturer": "Tülin Öztürk",
     "type": "course",
-    "id": "1004-2027-05-05-397"
-  },
-  {
-    "committeeId": "1004",
-    "date": "2027-05-05",
-    "topic": "İletişim Becerileri",
-    "department": "Seçmeli Ders",
-    "lecturer": "Ramazan Arslan",
-    "type": "course",
-    "id": "1004-2027-05-05-398"
+    "isPanel": false,
+    "id": "1004-2027-05-05-306"
   },
   {
     "committeeId": "1004",
@@ -3615,7 +3125,8 @@ export const schedule = [
     "department": "Tıbbi Farmakoloji",
     "lecturer": "Andleeb Bukhari",
     "type": "course",
-    "id": "1004-2027-05-06-399"
+    "isPanel": false,
+    "id": "1004-2027-05-06-307"
   },
   {
     "committeeId": "1004",
@@ -3624,7 +3135,8 @@ export const schedule = [
     "department": "Tıbbi Farmakoloji",
     "lecturer": "Andleeb Bukhari",
     "type": "course",
-    "id": "1004-2027-05-06-400"
+    "isPanel": false,
+    "id": "1004-2027-05-06-308"
   },
   {
     "committeeId": "1004",
@@ -3633,7 +3145,8 @@ export const schedule = [
     "department": "Tıbbi Patoloji",
     "lecturer": "Nuray Kepil",
     "type": "course",
-    "id": "1004-2027-05-06-401"
+    "isPanel": false,
+    "id": "1004-2027-05-06-309"
   },
   {
     "committeeId": "1004",
@@ -3642,43 +3155,8 @@ export const schedule = [
     "department": "Tıbbi Patoloji",
     "lecturer": "Nuray Kepil",
     "type": "course",
-    "id": "1004-2027-05-06-402"
-  },
-  {
-    "committeeId": "1004",
-    "date": "2027-05-06",
-    "topic": "Yapay Zekâ",
-    "department": "Seçmeli Ders",
-    "lecturer": "Ahmet Baş",
-    "type": "course",
-    "id": "1004-2027-05-06-403"
-  },
-  {
-    "committeeId": "1004",
-    "date": "2027-05-07",
-    "topic": "Atatürk İlkeleri ve İnkılap Tarihi II",
-    "department": "Ortak Dersler",
-    "lecturer": "",
-    "type": "course",
-    "id": "1004-2027-05-07-404"
-  },
-  {
-    "committeeId": "1004",
-    "date": "2027-05-07",
-    "topic": "Türk Dili ve Edebiyatı II",
-    "department": "Ortak Dersler",
-    "lecturer": "",
-    "type": "course",
-    "id": "1004-2027-05-07-405"
-  },
-  {
-    "committeeId": "1004",
-    "date": "2027-05-07",
-    "topic": "Yabancı Dil II",
-    "department": "Ortak Dersler",
-    "lecturer": "",
-    "type": "course",
-    "id": "1004-2027-05-07-406"
+    "isPanel": false,
+    "id": "1004-2027-05-06-310"
   },
   {
     "committeeId": "1004",
@@ -3687,7 +3165,8 @@ export const schedule = [
     "department": "Tıbbi Mikrobiyoloji",
     "lecturer": "Nuri Kiraz",
     "type": "course",
-    "id": "1004-2027-05-10-407"
+    "isPanel": false,
+    "id": "1004-2027-05-10-311"
   },
   {
     "committeeId": "1004",
@@ -3696,7 +3175,8 @@ export const schedule = [
     "department": "Tıbbi Mikrobiyoloji",
     "lecturer": "Nuri Kiraz",
     "type": "course",
-    "id": "1004-2027-05-10-408"
+    "isPanel": false,
+    "id": "1004-2027-05-10-312"
   },
   {
     "committeeId": "1004",
@@ -3705,7 +3185,8 @@ export const schedule = [
     "department": "Ruh Sağlığı ve Hastalıkları",
     "lecturer": "Burç Çağrı Poyraz",
     "type": "course",
-    "id": "1004-2027-05-10-409"
+    "isPanel": false,
+    "id": "1004-2027-05-10-313"
   },
   {
     "committeeId": "1004",
@@ -3714,7 +3195,8 @@ export const schedule = [
     "department": "Ruh Sağlığı ve Hastalıkları",
     "lecturer": "Yasin Kavla",
     "type": "course",
-    "id": "1004-2027-05-10-410"
+    "isPanel": false,
+    "id": "1004-2027-05-10-314"
   },
   {
     "committeeId": "1004",
@@ -3723,16 +3205,8 @@ export const schedule = [
     "department": "",
     "lecturer": "",
     "type": "study",
-    "id": "1004-2027-05-11-411"
-  },
-  {
-    "committeeId": "1004",
-    "date": "2027-05-11",
-    "topic": "Güzel Sanatlar II",
-    "department": "Ortak Dersler",
-    "lecturer": "",
-    "type": "course",
-    "id": "1004-2027-05-11-412"
+    "isPanel": false,
+    "id": "1004-2027-05-11-315"
   },
   {
     "committeeId": "1004",
@@ -3741,16 +3215,8 @@ export const schedule = [
     "department": "",
     "lecturer": "",
     "type": "study",
-    "id": "1004-2027-05-12-413"
-  },
-  {
-    "committeeId": "1004",
-    "date": "2027-05-12",
-    "topic": "İletişim Becerileri",
-    "department": "Seçmeli Ders",
-    "lecturer": "Ramazan Arslan",
-    "type": "course",
-    "id": "1004-2027-05-12-414"
+    "isPanel": false,
+    "id": "1004-2027-05-12-316"
   },
   {
     "committeeId": "1004",
@@ -3759,43 +3225,8 @@ export const schedule = [
     "department": "",
     "lecturer": "",
     "type": "exam",
-    "id": "1004-2027-05-13-415"
-  },
-  {
-    "committeeId": "1004",
-    "date": "2027-05-13",
-    "topic": "Yapay Zekâ",
-    "department": "Seçmeli Ders",
-    "lecturer": "Ahmet Baş",
-    "type": "course",
-    "id": "1004-2027-05-13-416"
-  },
-  {
-    "committeeId": "1004",
-    "date": "2027-05-14",
-    "topic": "Atatürk İlkeleri ve İnkılap Tarihi II",
-    "department": "Ortak Dersler",
-    "lecturer": "",
-    "type": "course",
-    "id": "1004-2027-05-14-417"
-  },
-  {
-    "committeeId": "1004",
-    "date": "2027-05-14",
-    "topic": "Türk Dili ve Edebiyatı II",
-    "department": "Ortak Dersler",
-    "lecturer": "",
-    "type": "course",
-    "id": "1004-2027-05-14-418"
-  },
-  {
-    "committeeId": "1004",
-    "date": "2027-05-14",
-    "topic": "Yabancı Dil II",
-    "department": "Ortak Dersler",
-    "lecturer": "",
-    "type": "course",
-    "id": "1004-2027-05-14-419"
+    "isPanel": false,
+    "id": "1004-2027-05-13-317"
   },
   {
     "committeeId": "1004",
@@ -3804,7 +3235,8 @@ export const schedule = [
     "department": "",
     "lecturer": "",
     "type": "holiday",
-    "id": "1004-2027-05-17-420"
+    "isPanel": false,
+    "id": "1004-2027-05-17-318"
   },
   {
     "committeeId": "1004",
@@ -3813,7 +3245,8 @@ export const schedule = [
     "department": "",
     "lecturer": "",
     "type": "holiday",
-    "id": "1004-2027-05-18-421"
+    "isPanel": false,
+    "id": "1004-2027-05-18-319"
   },
   {
     "committeeId": "1004",
@@ -3822,34 +3255,8 @@ export const schedule = [
     "department": "",
     "lecturer": "",
     "type": "holiday",
-    "id": "1004-2027-05-19-422"
-  },
-  {
-    "committeeId": "1004",
-    "date": "2027-05-21",
-    "topic": "Atatürk İlkeleri ve İnkılap Tarihi II",
-    "department": "Ortak Dersler",
-    "lecturer": "",
-    "type": "course",
-    "id": "1004-2027-05-21-423"
-  },
-  {
-    "committeeId": "1004",
-    "date": "2027-05-21",
-    "topic": "Türk Dili ve Edebiyatı II",
-    "department": "Ortak Dersler",
-    "lecturer": "",
-    "type": "course",
-    "id": "1004-2027-05-21-424"
-  },
-  {
-    "committeeId": "1004",
-    "date": "2027-05-21",
-    "topic": "Yabancı Dil II",
-    "department": "Ortak Dersler",
-    "lecturer": "",
-    "type": "course",
-    "id": "1004-2027-05-21-425"
+    "isPanel": false,
+    "id": "1004-2027-05-19-320"
   },
   {
     "committeeId": "1004",
@@ -3858,7 +3265,8 @@ export const schedule = [
     "department": "Tıbbi Patoloji",
     "lecturer": "Nuray Kepil",
     "type": "course",
-    "id": "1004-2027-05-24-426"
+    "isPanel": false,
+    "id": "1004-2027-05-24-321"
   },
   {
     "committeeId": "1004",
@@ -3867,7 +3275,8 @@ export const schedule = [
     "department": "Tıbbi Patoloji",
     "lecturer": "Nuray Kepil",
     "type": "course",
-    "id": "1004-2027-05-24-427"
+    "isPanel": false,
+    "id": "1004-2027-05-24-322"
   },
   {
     "committeeId": "1004",
@@ -3876,7 +3285,8 @@ export const schedule = [
     "department": "Ruh Sağlığı ve Hastalıkları",
     "lecturer": "Numan Konuk",
     "type": "course",
-    "id": "1004-2027-05-24-428"
+    "isPanel": false,
+    "id": "1004-2027-05-24-323"
   },
   {
     "committeeId": "1004",
@@ -3885,7 +3295,8 @@ export const schedule = [
     "department": "Ruh Sağlığı ve Hastalıkları",
     "lecturer": "Numan Konuk",
     "type": "course",
-    "id": "1004-2027-05-24-429"
+    "isPanel": false,
+    "id": "1004-2027-05-24-324"
   },
   {
     "committeeId": "1004",
@@ -3894,7 +3305,8 @@ export const schedule = [
     "department": "Tıbbi Patoloji",
     "lecturer": "Ceyda Sönmez Wetherilt",
     "type": "course",
-    "id": "1004-2027-05-25-430"
+    "isPanel": false,
+    "id": "1004-2027-05-25-325"
   },
   {
     "committeeId": "1004",
@@ -3903,7 +3315,8 @@ export const schedule = [
     "department": "Tıbbi Patoloji",
     "lecturer": "Ceyda Sönmez Wetherilt",
     "type": "course",
-    "id": "1004-2027-05-25-431"
+    "isPanel": false,
+    "id": "1004-2027-05-25-326"
   },
   {
     "committeeId": "1004",
@@ -3912,7 +3325,8 @@ export const schedule = [
     "department": "Ruh Sağlığı ve Hastalıkları",
     "lecturer": "Alperen Kılıç",
     "type": "course",
-    "id": "1004-2027-05-25-432"
+    "isPanel": false,
+    "id": "1004-2027-05-25-327"
   },
   {
     "committeeId": "1004",
@@ -3921,16 +3335,8 @@ export const schedule = [
     "department": "Ruh Sağlığı ve Hastalıkları",
     "lecturer": "Alperen Kılıç",
     "type": "course",
-    "id": "1004-2027-05-25-433"
-  },
-  {
-    "committeeId": "1004",
-    "date": "2027-05-25",
-    "topic": "Güzel Sanatlar II",
-    "department": "Ortak Dersler",
-    "lecturer": "",
-    "type": "course",
-    "id": "1004-2027-05-25-434"
+    "isPanel": false,
+    "id": "1004-2027-05-25-328"
   },
   {
     "committeeId": "1004",
@@ -3939,7 +3345,8 @@ export const schedule = [
     "department": "Aile Hekimliği",
     "lecturer": "Ayşen Fenercioğlu",
     "type": "course",
-    "id": "1004-2027-05-26-435"
+    "isPanel": false,
+    "id": "1004-2027-05-26-329"
   },
   {
     "committeeId": "1004",
@@ -3948,7 +3355,8 @@ export const schedule = [
     "department": "Aile Hekimliği",
     "lecturer": "Nurver Turfaner Sipahioğlu",
     "type": "course",
-    "id": "1004-2027-05-26-436"
+    "isPanel": false,
+    "id": "1004-2027-05-26-330"
   },
   {
     "committeeId": "1004",
@@ -3957,7 +3365,8 @@ export const schedule = [
     "department": "Tıbbi Farmakoloji",
     "lecturer": "Sibel Özmen Özyazgan",
     "type": "course",
-    "id": "1004-2027-05-26-437"
+    "isPanel": false,
+    "id": "1004-2027-05-26-331"
   },
   {
     "committeeId": "1004",
@@ -3966,16 +3375,8 @@ export const schedule = [
     "department": "Tıbbi Farmakoloji",
     "lecturer": "Sibel Özmen Özyazgan",
     "type": "course",
-    "id": "1004-2027-05-26-438"
-  },
-  {
-    "committeeId": "1004",
-    "date": "2027-05-26",
-    "topic": "İletişim Becerileri",
-    "department": "Seçmeli Ders",
-    "lecturer": "Ramazan Arslan",
-    "type": "course",
-    "id": "1004-2027-05-26-439"
+    "isPanel": false,
+    "id": "1004-2027-05-26-332"
   },
   {
     "committeeId": "1004",
@@ -3984,7 +3385,8 @@ export const schedule = [
     "department": "Tıbbi Patoloji",
     "lecturer": "Tülin Öztürk",
     "type": "course",
-    "id": "1004-2027-05-27-440"
+    "isPanel": false,
+    "id": "1004-2027-05-27-333"
   },
   {
     "committeeId": "1004",
@@ -3993,7 +3395,8 @@ export const schedule = [
     "department": "Tıbbi Patoloji",
     "lecturer": "Tülin Öztürk",
     "type": "course",
-    "id": "1004-2027-05-27-441"
+    "isPanel": false,
+    "id": "1004-2027-05-27-334"
   },
   {
     "committeeId": "1004",
@@ -4002,7 +3405,8 @@ export const schedule = [
     "department": "Tıbbi Farmakoloji",
     "lecturer": "Andleeb Bukhari",
     "type": "course",
-    "id": "1004-2027-05-27-442"
+    "isPanel": false,
+    "id": "1004-2027-05-27-335"
   },
   {
     "committeeId": "1004",
@@ -4011,43 +3415,8 @@ export const schedule = [
     "department": "Tıbbi Farmakoloji",
     "lecturer": "Andleeb Bukhari",
     "type": "course",
-    "id": "1004-2027-05-27-443"
-  },
-  {
-    "committeeId": "1004",
-    "date": "2027-05-27",
-    "topic": "Yapay Zekâ",
-    "department": "Seçmeli Ders",
-    "lecturer": "Ahmet Baş",
-    "type": "course",
-    "id": "1004-2027-05-27-444"
-  },
-  {
-    "committeeId": "1004",
-    "date": "2027-05-28",
-    "topic": "Atatürk İlkeleri ve İnkılap Tarihi II",
-    "department": "Ortak Dersler",
-    "lecturer": "",
-    "type": "course",
-    "id": "1004-2027-05-28-445"
-  },
-  {
-    "committeeId": "1004",
-    "date": "2027-05-28",
-    "topic": "Türk Dili ve Edebiyatı II",
-    "department": "Ortak Dersler",
-    "lecturer": "",
-    "type": "course",
-    "id": "1004-2027-05-28-446"
-  },
-  {
-    "committeeId": "1004",
-    "date": "2027-05-28",
-    "topic": "Yabancı Dil II",
-    "department": "Ortak Dersler",
-    "lecturer": "",
-    "type": "course",
-    "id": "1004-2027-05-28-447"
+    "isPanel": false,
+    "id": "1004-2027-05-27-336"
   },
   {
     "committeeId": "1004",
@@ -4056,7 +3425,8 @@ export const schedule = [
     "department": "Tıbbi Patoloji",
     "lecturer": "Ceyda Sönmez Wetherilt",
     "type": "course",
-    "id": "1004-2027-05-31-448"
+    "isPanel": false,
+    "id": "1004-2027-05-31-337"
   },
   {
     "committeeId": "1004",
@@ -4065,7 +3435,8 @@ export const schedule = [
     "department": "Nükleer Tıp",
     "lecturer": "Emre Karayel",
     "type": "course",
-    "id": "1004-2027-05-31-449"
+    "isPanel": false,
+    "id": "1004-2027-05-31-338"
   },
   {
     "committeeId": "1004",
@@ -4074,7 +3445,8 @@ export const schedule = [
     "department": "Tıbbi Mikrobiyoloji",
     "lecturer": "Nuri Kiraz",
     "type": "course",
-    "id": "1004-2027-05-31-450"
+    "isPanel": false,
+    "id": "1004-2027-05-31-339"
   },
   {
     "committeeId": "1004",
@@ -4083,7 +3455,8 @@ export const schedule = [
     "department": "Anesteziyoloji ve Reanimasyon",
     "lecturer": "Pınar Kendigelen",
     "type": "course",
-    "id": "1004-2027-05-31-451"
+    "isPanel": false,
+    "id": "1004-2027-05-31-340"
   },
   {
     "committeeId": "1004",
@@ -4092,7 +3465,8 @@ export const schedule = [
     "department": "Çocuk ve Ergen Ruh Sağlığı ve Hastalıkları",
     "lecturer": "Mahmut Cem Tarakçıoğlu",
     "type": "course",
-    "id": "1004-2027-06-01-452"
+    "isPanel": false,
+    "id": "1004-2027-06-01-341"
   },
   {
     "committeeId": "1004",
@@ -4101,7 +3475,8 @@ export const schedule = [
     "department": "Tıbbi Mikrobiyoloji",
     "lecturer": "Murat Hökelek",
     "type": "course",
-    "id": "1004-2027-06-01-453"
+    "isPanel": false,
+    "id": "1004-2027-06-01-342"
   },
   {
     "committeeId": "1004",
@@ -4110,7 +3485,8 @@ export const schedule = [
     "department": "Tıbbi Patoloji",
     "lecturer": "İrem Onur",
     "type": "course",
-    "id": "1004-2027-06-01-454"
+    "isPanel": false,
+    "id": "1004-2027-06-01-343"
   },
   {
     "committeeId": "1004",
@@ -4119,16 +3495,8 @@ export const schedule = [
     "department": "Tıbbi Patoloji",
     "lecturer": "İrem Onur",
     "type": "course",
-    "id": "1004-2027-06-01-455"
-  },
-  {
-    "committeeId": "1004",
-    "date": "2027-06-01",
-    "topic": "Güzel Sanatlar II",
-    "department": "Ortak Dersler",
-    "lecturer": "",
-    "type": "course",
-    "id": "1004-2027-06-01-456"
+    "isPanel": false,
+    "id": "1004-2027-06-01-344"
   },
   {
     "committeeId": "1004",
@@ -4137,7 +3505,8 @@ export const schedule = [
     "department": "Tıbbi Farmakoloji",
     "lecturer": "Öner Süzer",
     "type": "course",
-    "id": "1004-2027-06-02-457"
+    "isPanel": false,
+    "id": "1004-2027-06-02-345"
   },
   {
     "committeeId": "1004",
@@ -4146,7 +3515,8 @@ export const schedule = [
     "department": "Tıbbi Farmakoloji",
     "lecturer": "Öner Süzer",
     "type": "course",
-    "id": "1004-2027-06-02-458"
+    "isPanel": false,
+    "id": "1004-2027-06-02-346"
   },
   {
     "committeeId": "1004",
@@ -4155,7 +3525,8 @@ export const schedule = [
     "department": "Aile Hekimliği",
     "lecturer": "Didem Kafadar",
     "type": "course",
-    "id": "1004-2027-06-02-459"
+    "isPanel": false,
+    "id": "1004-2027-06-02-347"
   },
   {
     "committeeId": "1004",
@@ -4164,16 +3535,8 @@ export const schedule = [
     "department": "Tıbbi Patoloji",
     "lecturer": "Ceyda Sönmez Wetherilt",
     "type": "course",
-    "id": "1004-2027-06-02-460"
-  },
-  {
-    "committeeId": "1004",
-    "date": "2027-06-02",
-    "topic": "İletişim Becerileri",
-    "department": "Seçmeli Ders",
-    "lecturer": "Ramazan Arslan",
-    "type": "course",
-    "id": "1004-2027-06-02-461"
+    "isPanel": false,
+    "id": "1004-2027-06-02-348"
   },
   {
     "committeeId": "1004",
@@ -4182,7 +3545,8 @@ export const schedule = [
     "department": "Tıbbi Farmakoloji",
     "lecturer": "Andleeb Bukhari",
     "type": "course",
-    "id": "1004-2027-06-03-462"
+    "isPanel": false,
+    "id": "1004-2027-06-03-349"
   },
   {
     "committeeId": "1004",
@@ -4191,7 +3555,8 @@ export const schedule = [
     "department": "Tıbbi Farmakoloji",
     "lecturer": "Andleeb Bukhari",
     "type": "course",
-    "id": "1004-2027-06-03-463"
+    "isPanel": false,
+    "id": "1004-2027-06-03-350"
   },
   {
     "committeeId": "1004",
@@ -4200,7 +3565,8 @@ export const schedule = [
     "department": "Tıbbi Mikrobiyoloji",
     "lecturer": "Murat Hökelek",
     "type": "course",
-    "id": "1004-2027-06-03-464"
+    "isPanel": false,
+    "id": "1004-2027-06-03-351"
   },
   {
     "committeeId": "1004",
@@ -4209,43 +3575,8 @@ export const schedule = [
     "department": "Tıbbi Mikrobiyoloji",
     "lecturer": "Murat Hökelek",
     "type": "course",
-    "id": "1004-2027-06-03-465"
-  },
-  {
-    "committeeId": "1004",
-    "date": "2027-06-03",
-    "topic": "Yapay Zekâ",
-    "department": "Seçmeli Ders",
-    "lecturer": "Ahmet Baş",
-    "type": "course",
-    "id": "1004-2027-06-03-466"
-  },
-  {
-    "committeeId": "1004",
-    "date": "2027-06-04",
-    "topic": "Atatürk İlkeleri ve İnkılap Tarihi II",
-    "department": "Ortak Dersler",
-    "lecturer": "",
-    "type": "course",
-    "id": "1004-2027-06-04-467"
-  },
-  {
-    "committeeId": "1004",
-    "date": "2027-06-04",
-    "topic": "Türk Dili ve Edebiyatı II",
-    "department": "Ortak Dersler",
-    "lecturer": "",
-    "type": "course",
-    "id": "1004-2027-06-04-468"
-  },
-  {
-    "committeeId": "1004",
-    "date": "2027-06-04",
-    "topic": "Yabancı Dil II",
-    "department": "Ortak Dersler",
-    "lecturer": "",
-    "type": "course",
-    "id": "1004-2027-06-04-469"
+    "isPanel": false,
+    "id": "1004-2027-06-03-352"
   },
   {
     "committeeId": "1004",
@@ -4254,7 +3585,8 @@ export const schedule = [
     "department": "Tıbbi Patoloji",
     "lecturer": "İrem Onur",
     "type": "course",
-    "id": "1004-2027-06-07-470"
+    "isPanel": false,
+    "id": "1004-2027-06-07-353"
   },
   {
     "committeeId": "1004",
@@ -4263,7 +3595,8 @@ export const schedule = [
     "department": "Tıbbi Patoloji",
     "lecturer": "İrem Onur",
     "type": "course",
-    "id": "1004-2027-06-07-471"
+    "isPanel": false,
+    "id": "1004-2027-06-07-354"
   },
   {
     "committeeId": "1004",
@@ -4272,7 +3605,8 @@ export const schedule = [
     "department": "Çocuk ve Ergen Ruh Sağlığı ve Hastalıkları",
     "lecturer": "Mesut Yavuz",
     "type": "course",
-    "id": "1004-2027-06-07-472"
+    "isPanel": false,
+    "id": "1004-2027-06-07-355"
   },
   {
     "committeeId": "1004",
@@ -4281,7 +3615,8 @@ export const schedule = [
     "department": "Nükleer Tıp",
     "lecturer": "Mustafa Demir",
     "type": "course",
-    "id": "1004-2027-06-07-473"
+    "isPanel": false,
+    "id": "1004-2027-06-07-356"
   },
   {
     "committeeId": "1004",
@@ -4290,7 +3625,8 @@ export const schedule = [
     "department": "Tıbbi Mikrobiyoloji",
     "lecturer": "Emine Küçükateş",
     "type": "course",
-    "id": "1004-2027-06-08-474"
+    "isPanel": false,
+    "id": "1004-2027-06-08-357"
   },
   {
     "committeeId": "1004",
@@ -4299,7 +3635,8 @@ export const schedule = [
     "department": "Anesteziyoloji ve Reanimasyon",
     "lecturer": "Gürcan Güngör",
     "type": "course",
-    "id": "1004-2027-06-08-475"
+    "isPanel": false,
+    "id": "1004-2027-06-08-358"
   },
   {
     "committeeId": "1004",
@@ -4308,7 +3645,8 @@ export const schedule = [
     "department": "Aile Hekimliği",
     "lecturer": "Didem Kafadar",
     "type": "course",
-    "id": "1004-2027-06-08-476"
+    "isPanel": false,
+    "id": "1004-2027-06-08-359"
   },
   {
     "committeeId": "1004",
@@ -4317,16 +3655,8 @@ export const schedule = [
     "department": "Spor Hekimliği",
     "lecturer": "Yavuz Lima",
     "type": "course",
-    "id": "1004-2027-06-08-477"
-  },
-  {
-    "committeeId": "1004",
-    "date": "2027-06-08",
-    "topic": "Güzel Sanatlar II",
-    "department": "Ortak Dersler",
-    "lecturer": "",
-    "type": "course",
-    "id": "1004-2027-06-08-478"
+    "isPanel": false,
+    "id": "1004-2027-06-08-360"
   },
   {
     "committeeId": "1004",
@@ -4335,7 +3665,8 @@ export const schedule = [
     "department": "Halk Sağlığı",
     "lecturer": "Hazal Cansu Çolpan",
     "type": "course",
-    "id": "1004-2027-06-09-479"
+    "isPanel": false,
+    "id": "1004-2027-06-09-361"
   },
   {
     "committeeId": "1004",
@@ -4344,7 +3675,8 @@ export const schedule = [
     "department": "Halk Sağlığı",
     "lecturer": "Uğurcan Sayılı",
     "type": "course",
-    "id": "1004-2027-06-09-480"
+    "isPanel": false,
+    "id": "1004-2027-06-09-362"
   },
   {
     "committeeId": "1004",
@@ -4353,7 +3685,8 @@ export const schedule = [
     "department": "Halk Sağlığı",
     "lecturer": "Mehmet Sait Değer",
     "type": "course",
-    "id": "1004-2027-06-09-481"
+    "isPanel": false,
+    "id": "1004-2027-06-09-363"
   },
   {
     "committeeId": "1004",
@@ -4362,16 +3695,8 @@ export const schedule = [
     "department": "Halk Sağlığı",
     "lecturer": "Mehmet Sait Değer",
     "type": "course",
-    "id": "1004-2027-06-09-482"
-  },
-  {
-    "committeeId": "1004",
-    "date": "2027-06-09",
-    "topic": "İletişim Becerileri",
-    "department": "Seçmeli Ders",
-    "lecturer": "Ramazan Arslan",
-    "type": "course",
-    "id": "1004-2027-06-09-483"
+    "isPanel": false,
+    "id": "1004-2027-06-09-364"
   },
   {
     "committeeId": "1004",
@@ -4380,43 +3705,8 @@ export const schedule = [
     "department": "",
     "lecturer": "",
     "type": "study",
-    "id": "1004-2027-06-10-484"
-  },
-  {
-    "committeeId": "1004",
-    "date": "2027-06-10",
-    "topic": "Yapay Zekâ",
-    "department": "Seçmeli Ders",
-    "lecturer": "Ahmet Baş",
-    "type": "course",
-    "id": "1004-2027-06-10-485"
-  },
-  {
-    "committeeId": "1004",
-    "date": "2027-06-11",
-    "topic": "Atatürk İlkeleri ve İnkılap Tarihi II",
-    "department": "Ortak Dersler",
-    "lecturer": "",
-    "type": "course",
-    "id": "1004-2027-06-11-486"
-  },
-  {
-    "committeeId": "1004",
-    "date": "2027-06-11",
-    "topic": "Türk Dili ve Edebiyatı II",
-    "department": "Ortak Dersler",
-    "lecturer": "",
-    "type": "course",
-    "id": "1004-2027-06-11-487"
-  },
-  {
-    "committeeId": "1004",
-    "date": "2027-06-11",
-    "topic": "Yabancı Dil II",
-    "department": "Ortak Dersler",
-    "lecturer": "",
-    "type": "course",
-    "id": "1004-2027-06-11-488"
+    "isPanel": false,
+    "id": "1004-2027-06-10-365"
   },
   {
     "committeeId": "1004",
@@ -4425,6 +3715,7 @@ export const schedule = [
     "department": "",
     "lecturer": "",
     "type": "exam",
-    "id": "1004-2027-06-14-489"
+    "isPanel": false,
+    "id": "1004-2027-06-14-366"
   }
 ];
