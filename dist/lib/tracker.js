@@ -1,6 +1,8 @@
 const DAY_MS = 86_400_000;
 
 export const GENERAL_TAB = "__general__";
+export const PANEL_TAB = "__panels__";
+export const PANEL_ALL = "__all_panels__";
 
 export function parseISODate(value) {
   const [year, month, day] = value.split("-").map(Number);
@@ -53,7 +55,10 @@ export function getCommitteeRecords(schedule, committeeId) {
 export function getDepartments(schedule, committeeId) {
   return [...new Set(
     getCommitteeRecords(schedule, committeeId)
-      .filter((record) => record.type === "course" && record.department)
+      .filter(
+        (record) =>
+          record.type === "course" && !record.isPanel && record.department,
+      )
       .map((record) => record.department),
   )].sort((a, b) => a.localeCompare(b, "tr"));
 }
@@ -61,20 +66,56 @@ export function getDepartments(schedule, committeeId) {
 export function recordsForTab(schedule, committeeId, tab, today) {
   return getCommitteeRecords(schedule, committeeId).filter((record) => {
     if (record.date > today) return false;
-    if (tab === GENERAL_TAB) return record.type !== "course";
-    return record.type === "course" && record.department === tab;
+    if (tab === GENERAL_TAB) return record.type !== "course" && !record.isPanel;
+    if (tab === PANEL_TAB) return record.isPanel;
+    return (
+      !record.isPanel &&
+      record.type === "course" &&
+      record.department === tab
+    );
   });
 }
 
 export function allRecordsForTab(schedule, committeeId, tab) {
   return getCommitteeRecords(schedule, committeeId).filter((record) => {
-    if (tab === GENERAL_TAB) return record.type !== "course";
-    return record.type === "course" && record.department === tab;
+    if (tab === GENERAL_TAB) return record.type !== "course" && !record.isPanel;
+    if (tab === PANEL_TAB) return record.isPanel;
+    return (
+      !record.isPanel &&
+      record.type === "course" &&
+      record.department === tab
+    );
   });
 }
 
 export function firstDateForTab(schedule, committeeId, tab) {
   return allRecordsForTab(schedule, committeeId, tab)[0]?.date ?? null;
+}
+
+export function getPanelGroups(schedule, committeeId) {
+  return [...new Set(
+    getCommitteeRecords(schedule, committeeId)
+      .filter((record) => record.isPanel && record.panelGroup)
+      .map((record) => record.panelGroup),
+  )];
+}
+
+export function recordsForPanelGroup(schedule, committeeId, group, today) {
+  return getCommitteeRecords(schedule, committeeId).filter((record) => {
+    if (!record.isPanel || record.date > today) return false;
+    return group === PANEL_ALL || record.panelGroup === group;
+  });
+}
+
+export function allRecordsForPanelGroup(schedule, committeeId, group) {
+  return getCommitteeRecords(schedule, committeeId).filter((record) => {
+    if (!record.isPanel) return false;
+    return group === PANEL_ALL || record.panelGroup === group;
+  });
+}
+
+export function firstDateForPanelGroup(schedule, committeeId, group) {
+  return allRecordsForPanelGroup(schedule, committeeId, group)[0]?.date ?? null;
 }
 
 export function formatLongDate(value) {
