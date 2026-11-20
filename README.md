@@ -3,6 +3,11 @@
 2026–2027 CTF preklinik programındaki Dönem 1 öğrencileri için hazırlanmış,
 1002–1004 komitelerini güncel tarihe göre takip eden lokal web uygulaması.
 
+Uygulama yalnızca öğrencinin takip ettiği çekirdek dersleri içerir. Ortak dersler
+ve seçmeli dersler veri üretimi sırasında çıkarılır. Kaynak PDF'de maviyle
+işaretlenen araştırma ve proje dersleri ise `Panel Dersler` altında, kaynak ana
+bilim dallarına göre alt sekmelerde gösterilir.
+
 ## Çalıştırma
 
 Gerekenler: Python 3 veya eşdeğer bir statik dosya sunucusu.
