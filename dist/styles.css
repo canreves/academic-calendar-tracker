@@ -97,16 +97,30 @@ button {
   box-shadow: 0 8px 20px rgba(20, 92, 75, 0.2);
 }
 
-.brand-mark span {
-  position: absolute;
-  width: 1.2rem;
-  height: 0.24rem;
-  border-radius: 1rem;
-  background: white;
+.brand-symbol {
+  width: 1.85rem;
+  height: 1.85rem;
+  overflow: visible;
 }
 
-.brand-mark span:last-child {
-  transform: rotate(90deg);
+.brand-staff,
+.brand-serpent {
+  fill: none;
+  stroke: white;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+
+.brand-staff {
+  stroke-width: 2.35;
+}
+
+.brand-serpent {
+  stroke-width: 2.1;
+}
+
+.brand-serpent-head {
+  fill: white;
 }
 
 .brand-copy {

@@ -20,6 +20,8 @@ import {
 test("the interface uses the Cerrahpaşa identity", () => {
   const html = readFileSync(new URL("../dist/index.html", import.meta.url), "utf8");
   assert.match(html, /Cerrahpaşa Tıp · Dönem 1/);
+  assert.match(html, /class="brand-symbol"/);
+  assert.match(html, /class="brand-serpent"/);
   assert.doesNotMatch(html, /İstanbul Tıp/);
 });
 
